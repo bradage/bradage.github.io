@@ -1,4 +1,4 @@
-﻿body {
+﻿﻿body {
   background: #0D0B08;
 }
 
@@ -60,7 +60,6 @@
  margin-top: 5px;
  height: 30px;
  background: url(../images/nav_menu_current.jpg) no-repeat;
- color: #;
 }
 
 #nav ul li a.current:hover {
