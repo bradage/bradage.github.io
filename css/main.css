@@ -1,0 +1,22 @@
+﻿﻿h1,
+h2 {
+  font-family: Cambria, serif;
+}
+
+header,
+footer {
+  background-color: rgb(102, 116, 99);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.0rem;
+}
+
+img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.section {
+  border-bottom: 3px solid gray;
+}
