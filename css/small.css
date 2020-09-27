@@ -1,0 +1,13 @@
+@media (min-width: 16.5em){
+  h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  img {
+  }
+}

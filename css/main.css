@@ -1,6 +1,6 @@
 ﻿﻿h1,
 h2 {
-  font-family: Cambria, serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 header,
@@ -9,12 +9,15 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 1.0rem;
+  border-radius: 10px;
 }
 
 img {
-  position: absolute;
   top: 15px;
   right: 15px;
+  width: 200px;
+  height: auto;
+  float: right;
 }
 
 .section {
