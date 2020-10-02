@@ -1,0 +1,63 @@
+td{
+  padding: 10 10 10 10;
+}
+
+/*Primary Color*/
+.pc1{
+  background-color: #5D8BA3;
+  color: whitesmoke;
+}
+.pc2{
+  background-color: #3C6B84;
+  color: whitesmoke;
+}
+.pc3{
+  background-color: #234E66;
+  color: whitesmoke;
+}
+.pc4{
+  background-color: #103548;
+  color: whitesmoke;
+}
+.pc5{
+  background-color: #051E2B;
+  color: whitesmoke;
+}
+
+/*Secondary 1 Colors*/
+.sc11{
+  background-color: #FFCE8B;
+}
+.sc12{
+  background-color: #D09D58;
+}
+.sc13{
+  background-color: #A07131;
+}
+.sc14{
+  background-color: #724B15;
+  color: whitesmoke;
+}
+.sc15{
+  background-color: #442904;
+  color: whitesmoke;
+}
+
+/*Secondary 2 Colors*/
+.sc21{
+  background-color: #FFC68B;
+}
+.sc22{
+  background-color: #D09558;
+}
+.sc23{
+  background-color: #A06931;
+}
+.sc24{
+  background-color: #724415;
+  color: whitesmoke;
+}
+.sc25{
+  background-color: #442404;
+  color: whitesmoke;
+}
