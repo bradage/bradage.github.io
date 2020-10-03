@@ -1,5 +1,62 @@
+main{
+  display: grid;
+}
+body{
+  max-width: 720px;
+  margin: auto;
+}
+
+h1 h2 h3 {
+  font-family: 'Hind', sans-serif;
+}
+
+.h1{
+  font-size: 30px;
+}
+
+.h2{
+  font-size: 24px;
+}
+
+.h3{
+  font-size: 18px;
+}
+
+p{
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.p {
+  font-size: 16px;
+}
+
+header footer nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  font-size: 35px;
+}
+
+.nav {
+  font-size: 18px;
+}
+
+.footer {
+  font-size: 16px;
+}
+
+img{
+  width: 200px;
+  height: auto;
+}
+
 td{
   padding: 10 10 10 10;
+}
+
+nav ul li a {
+  display: block;
 }
 
 /*Primary Color*/
@@ -60,4 +117,18 @@ td{
 .sc25{
   background-color: #442404;
   color: whitesmoke;
+}
+
+@media only screen and (min-width: 37.5em){
+  nav ul{
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 60em){
+
 }
