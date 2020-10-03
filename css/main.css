@@ -1,4 +1,9 @@
-﻿﻿h1,
+﻿﻿body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h1,
 h2 {
   font-family: 'Roboto Slab', serif;
 }
