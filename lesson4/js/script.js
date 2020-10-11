@@ -1,3 +1,5 @@
+//Format Date
+//create array to match 0-6 to day of week spelled out
 let days = [
     "Sunday"
   , "Monday"
@@ -9,6 +11,7 @@ let days = [
   , "Sunday"
 ]
 
+//create array to match 0-11 to month of year spelled out
 let months = [
     "January"
   , "February"
@@ -24,6 +27,7 @@ let months = [
   , "December"
 ]
 
+
 let lastMod = new Date(document.lastModified);
 let day = lastMod.getDay();
 let dayOfWeek = days[lastMod.getDay()];
@@ -33,3 +37,8 @@ let year = lastMod.getFullYear();
 let formattedDate = dayOfWeek + ", " + day + " " + month + " " + year;
 
 document.getElementById('lastMod').textContent = formattedDate;
+
+//toggleMenu function
+function toggleMenu() {
+  document.getElementsByClassName("nav")[0].classList.toggle("responsive");
+}

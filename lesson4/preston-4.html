@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
@@ -11,19 +11,28 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
-        <div class="logo"><img src="images/weatherupdate_logo_fullsize.png" alt="weatherupdate.com logo"></div>
-        <h1>Weather Update</h1>
+        <picture>
+            <img src="images/weatherupdate_logo_fullsize.png" alt="weatherupdate.com logo">
+        </picture>
+        <section>
+            <h1>Weather Update</h1>
+            <h3>When you need to be up-to-date.</h3>
+        </section>
     </header>
     <nav>
-        <ul>
+        <ul class="nav">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -33,7 +42,19 @@
         </ul>
     </nav>
     <main>
-
+        <h2>Preston Idaho</h2>
+        <section class="placeHolder">
+            Hero Image/Weather Summary
+        </section>
+        <section class="placeHolder">
+            5 day forecast
+        </section>
+        <section class="placeHolder">
+            article
+        </section>
+        <section class="placeHolder">
+            contact information
+        </section>
     </main>
     <footer>
         &copy; Weather Update | Bradey Merrill |
