@@ -32,6 +32,10 @@ li {
   font-family: 'Roboto', sans-serif;
 }
 
+aside {
+  display: block;
+}
+
 h1,
 h2,
 h3 {
