@@ -1,0 +1,45 @@
+@media only screen and (min-width: 66em) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: block;
+        align-items: center;
+        margin: 0% 15% 0% 15%;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .placeHolder {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+        margin: 0% 15% 0% 15%;
+    }
+}

@@ -1,0 +1,51 @@
+@media only screen and (min-width: 32em) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        flex: 1 1 100%;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .placeHolder {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    main {
+        margin: 0px 5px 0px 5px;
+    }
+}

@@ -1,6 +1,8 @@
 main {
   display: grid;
   padding: 2px 0px 2px 0px;
+  margin: 5px 5px 5px 5px;
+  align-content: center;
 }
 
 body {
@@ -38,10 +40,6 @@ img {
   height: auto;
 }
 
-td {
-  padding: 10px 10px 10px 10px;
-}
-
 nav,
 ul,
 li,
@@ -55,7 +53,6 @@ nav {
   background-color: #3C6B84;
   text-align: center;
   color: #FFCE8B;
-  padding: 1px 0px 1px 0px;
 }
 
 nav a:hover {
@@ -70,10 +67,6 @@ nav a:active {
 
 .lastUpdate {
   color: #f5f5f5
-}
-
-.bulleted {
-  color: black;
 }
 
 /* Typography class settings */
@@ -105,84 +98,114 @@ nav a:active {
   font-size: 16px;
 }
 
+.textBlack {
+  color: black;
+}
+
 /*Primary Color*/
 .pc1 {
   background-color: #5D8BA3;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .pc2 {
   background-color: #3C6B84;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .pc3 {
   background-color: #234E66;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .pc4 {
   background-color: #103548;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .pc5 {
   background-color: #051E2B;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 /*Secondary 1 Colors*/
 .sc11 {
   background-color: #FFCE8B;
+  color: black;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc12 {
   background-color: #D09D58;
+  color: black;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc13 {
   background-color: #A07131;
+  color: black;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc14 {
   background-color: #724B15;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc15 {
   background-color: #442904;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 /*Secondary 2 Colors*/
 .sc21 {
   background-color: #FFC68B;
+  color: black;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc22 {
   background-color: #D09558;
+  color: black;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc23 {
   background-color: #A06931;
+  color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc24 {
   background-color: #724415;
   color: whitesmoke;
+  padding-left: 5px;
+  max-width: 5em;
 }
 
 .sc25 {
   background-color: #442404;
   color: whitesmoke;
-}
-
-@media only screen and (min-width: 37.5em) {
-  nav ul {
-    display: flex;
-  }
-
-  nav ul li {
-    flex: 1 1 100%;
-  }
+  padding-left: 5px;
+  max-width: 5em;
 }
