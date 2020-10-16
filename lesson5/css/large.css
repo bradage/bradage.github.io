@@ -70,6 +70,12 @@
     .contactImg {
         width: 300px;
         height: auto;
+        margin: 1em 0em 0em 1em;
+    }
+
+    .socialImg {
+        width:32px;
+        height: 32px;
     }
 
      .currentSummary { 
@@ -102,22 +108,40 @@
     }
 
     .forecast {
-        display: grid;
+        display: flex;
         margin: 10px auto;
         width: 100%;
         height: 10em;
         background-color: #5D8BA3;
+        color:whitesmoke;
+        align-items: center;
+    }
+
+    .tdForecast {
+        font-size: 32px;
+        text-align: center;
+        padding: 0px 5px 0px 5px;
+
     }
 
     .mainArticle{
+        display: block;
+        position: relative;
         width: 100%;
         background-color: #5D8BA3;
-        padding: 5;
     }
 
     .contact {
+        display: block;
+        position: relative;
         width: 100%;
         background-color: #5D8BA3;
+    }
+
+    .contactInfo {
+        float: right;
+        padding-right: 30em;
+        
     }
 
 }
