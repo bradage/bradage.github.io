@@ -42,3 +42,12 @@ document.getElementById('lastMod').textContent = formattedDate;
 function toggleMenu() {
   document.getElementsByClassName("nav")[0].classList.toggle("responsive");
 }
+
+//pancake banner
+let today = new Date();
+
+let bannerMessage = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+
+if(today.getDay() == 4){
+  document.getElementById('bannerPancakes').textContent = bannerMessage;
+}
