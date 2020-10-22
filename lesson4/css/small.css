@@ -64,7 +64,7 @@ p {
 
 /*Nav rules */
 nav {
-  background-color: #A07131;
+  background-color: #FFCE8B;
   text-align: center;
   margin: 0 auto;
   font-size: 18px;
@@ -99,8 +99,9 @@ a {
 }
 
 .nav a:hover {
-  background-color: #051E2B;
-  color: #A07131;
+  background-color: #5D8BA3;
+  color: #FFCE8B
+  ;
 }
 
 .responsive li {
