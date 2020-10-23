@@ -51,7 +51,9 @@
         <h2>Preston Idaho</h2>
         <div class="mainDiv">
             <picture>
-                <img class="mainImg" src="images/main_image.jpg" alt="Hills above Preston">
+                <source srcset="images/hero_image_800.jpg" media="(min-width: 500px) and max-width: 799px)">
+                <source srcset="images/hero_image_1200.jpg" media="(min-width: 800px)">
+                <img class="mainImg" src="images/hero_image_600.jpg" alt="Hills above Preston">
             </picture>
             <section class="currentSummary">
                 <h3 class="summaryh3">Weather Summary</h3>
