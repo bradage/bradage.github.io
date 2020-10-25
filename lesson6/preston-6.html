@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
@@ -50,10 +47,10 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="mainDiv">
-            <picture>
-                <source srcset="images/hero_image_800.jpg" media="(min-width: 500px) and (max-width: 799px)">
-                <source srcset="images/hero_image_1200.jpg" media="min-width: 800px">
-                <img class="mainImg" src="images/hero_image_600.jpg" alt="Hills above Preston">
+            <picture class="heroImage">
+                <source srcset="images/heroImage600_medium.jpg" media="(min-width: 321px) and (max-width: 799px)">
+                <source srcset="images/heroImage800_large.jpg" media="(min-width: 800px)">
+                <img src="images/heroImage400_small.jpg" alt="Hills above Preston">
             </picture>
             <section class="currentSummary">
                 <h3 class="summaryh3">Weather Summary</h3>
@@ -67,12 +64,12 @@
                     <tr>
                         <td class="tdLeft">High</td>
                         <td class="tdCenter">|</td>
-                        <td class="tdRight">54 &#8457;</td>
+                        <td class="tdRight" id="temp">54 &#8457;</td>
                     </tr>
                     <tr>
                         <td class="tdLeft">Wind Chill</td>
                         <td class="tdCenter">|</td>
-                        <td class="tdRight">-</td>
+                        <td class="tdRight" id="windchill">-</td>
                     </tr>
                     <tr>
                         <td class="tdLeft">Humidity</td>
@@ -82,7 +79,7 @@
                     <tr>
                         <td class="tdLeft">Wind Speed</td>
                         <td class="tdCenter">|</td>
-                        <td class="tdRight">3 mph</td>
+                        <td class="tdRight" id="wspeed">5 mph</td>
                     </tr>
                 </table>
             </section>
@@ -160,7 +157,9 @@
         &copy; Weather Update | Bradey Merrill |
         Last Updated: <span id="lastMod"></span>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/pancake.js"></script>
+    <script type="text/javascript" src="script/windchill.js"></script>
 </body>
 
 </html>

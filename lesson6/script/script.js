@@ -42,3 +42,12 @@ document.getElementById('lastMod').textContent = formattedDate;
 function toggleMenu() {
   document.getElementsByClassName("nav")[0].classList.toggle("responsive");
 }
+
+//WebFont
+WebFont.load({
+  google: {
+    families: [
+       'Roboto', 'Hind', 'Sawarabi'
+    ]
+  }
+});

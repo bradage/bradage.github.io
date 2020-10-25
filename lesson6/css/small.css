@@ -78,6 +78,7 @@ nav {
   margin: 0 auto;
   font-size: 18px;
   line-height: 1.5em;
+  font-weight: bold;
 }
 
 nav,
@@ -114,7 +115,7 @@ a {
 }
 
 .navactive {
-  color: #D09D58;
+  color: #FFCE8B;
   background-color: #234E66;
 }
 
@@ -128,10 +129,14 @@ img {
   height: auto;
 }
 
-.mainImg {
-  margin: 10px auto;
-  width: 1024px;
-  height: auto;
+picture.heroImage{
+  display:block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main picture.heroImage img {
+  width: 100%;
 }
 
 .mainDiv {
@@ -144,6 +149,7 @@ img {
   background-color: seagreen;
   opacity: .8;
   padding: 5px;
+  margin: 0 0 0 20px;
 }
 
 .forecast {
