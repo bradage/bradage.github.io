@@ -13,11 +13,70 @@
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 
 </head>
-
 <body>
+    <aside>
+        <p id="bannerPancakes"></p>
+    </aside>
+    <script type="text/javascript" src="js/pancake.js"></script>
+    <header>
+        <picture>
+            <img src="images/weatherupdate_logo_fullsize.png" alt="weatherupdate.com logo">
+        </picture>
+        <section>
+            <h1>Weather Update</h1>
+            <h3 class="headerh3">When you need to be up-to-date.</h3>
+        </section>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a class="navactive" href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="mainDiv">
+            <picture class="galleryImage">
+                <source srcset="images/heroImage600_medium.jpg" media="(min-width: 321px) and (max-width: 799px)">
+                <source srcset="images/heroImage800_large.jpg" media="(min-width: 800px)">
+                <img src="images/heroImage400_small.jpg" data-src="" alt="Hills above Preston">
+                <figcaption>Something Cathy</figcaption>
+            </picture>
+            
+        <div class="contact">
+            <picture>
+                <img class="contactImg" src="images/map.png" alt="Office location map">
+            </picture>
+            <section class="contactInfo">
+                <h3>Weather Update</h3>
+                <p>P Sherman 42 Wallaby Way<br>
+                    Preston, Idaho 83263</p>
+                <p>&#9990; (208) 867-5309<br>
+                    &#9993; weatherupdate@gmail.com</p>
+                <section>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; Weather Update | Bradey Merrill |
+        Last Updated: <span id="lastMod"></span>
+    </footer>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/pancake.js"></script>
+    <script type="text/javascript" src="script/windchill.js"></script>
 </body>
-
-</html>
+</html> 
