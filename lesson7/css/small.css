@@ -1,11 +1,3 @@
-picture img[data-src] {
-  filter: blur(0.2em);
-}
-
-picture img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
 main {
   display: grid;
   justify-content: center;
@@ -134,7 +126,7 @@ a {
 
 /*Image rules*/
 img {
-  width: 175px;
+  width: 200px;
   height: auto;
 }
 
@@ -149,7 +141,9 @@ main picture.heroImage img {
 }
 
 .mainDiv {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
 }
 
 .currentSummary {
@@ -163,4 +157,24 @@ main picture.heroImage img {
 
 .forecast {
   display: none;
+}
+
+img[data-src] {
+  filter: blur(0.25 rem);
+}
+
+picture img {
+  filter: blur(0);
+  transition: filter 0.5s;
+}
+
+figcaption {
+  background-color: #FFCE8B;
+  text-align: center;
+  line-height: 2em;
+  width: 200px;
+}
+
+img:hover {
+  box-shadow: 10px 10px 5px #5D8BA3;
 }

@@ -17,7 +17,7 @@
     }
 
     img {
-        width: 200px;
+        width: 300px;
         height: auto;
     }
 
@@ -48,6 +48,12 @@
 
     main {
         margin: 0px 5px 0px 5px;
+    }
+
+    .mainDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 
     /*Image Rules*/

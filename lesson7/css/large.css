@@ -18,13 +18,19 @@
     }
 
     main {
-        display: block;
+        display: grid;
         align-items: center;
         margin: 0% 15% 0% 15%;
     }
 
+    .mainDiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
     img {
-        width: 250px;
+        width: 600px;
         height: auto;
     }
 
