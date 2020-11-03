@@ -1,0 +1,180 @@
+main {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+header,
+footer {
+  background-color: #5D8BA3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  margin: 0px 5px 0px 5px;
+}
+
+article {
+  margin: 10px 15px 10px 15px;
+  text-align: justify;
+}
+
+/*General fonts size and color */
+header,
+footer,
+nav,
+ul,
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+aside {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Hind', sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  color: #442904;
+  margin: 15px 0px 0px 10px;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: left;
+}
+
+.headerh3 {
+  font-size: 14px;
+  font-style: italic;
+  color: #442904;
+  margin: 0px 0px 0px 10px;
+}
+
+p {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-size: 12px;
+}
+
+
+/*Nav rules */
+nav {
+  background-color: #FFCE8B;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+nav,
+ul,
+li,
+a {
+  display: block;
+  color: #051E2B;
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li:first-child {
+  display: block;
+}
+
+.nav li {
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: .75rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #5D8BA3;
+  color: #FFCE8B;
+}
+
+.navactive {
+  color: #FFCE8B;
+  background-color: #234E66;
+}
+
+.responsive li {
+  display: block;
+}
+
+/*Image rules*/
+img {
+  width: 200px;
+  height: auto;
+}
+
+picture.heroImage{
+  display:block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main picture.heroImage img {
+  width: 100%;
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.currentSummary {
+  position: absolute;
+  top: 1rem;
+  background-color: seagreen;
+  opacity: .8;
+  padding: 5px;
+  margin: 0 0 0 20px;
+}
+
+.forecast {
+  display: none;
+}
+
+img[data-src] {
+  filter: blur(0.25 rem);
+}
+
+picture img {
+  filter: blur(0);
+  transition: filter 0.5s;
+}
+
+figcaption {
+  background-color: #FFCE8B;
+  text-align: center;
+  line-height: 2em;
+  width: 200px;
+}
+
+img:hover {
+  box-shadow: 10px 10px 5px #5D8BA3;
+}
