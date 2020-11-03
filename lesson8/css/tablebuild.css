@@ -1,0 +1,39 @@
+table {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  border: 1px solid grey;
+  border-spacing: 0;
+}
+
+tr {
+  background-color: #e7f0ed;
+}
+
+td {
+  border: 1px solid grey;
+}
+
+thead tr th {
+  font-size: larger;
+}
+
+table thead tr th {
+  font-size: large;
+  font-weight: bold;
+  background-color: #7fb9c2;
+}
+
+table tfoot tr td {
+  font-size: smaller;
+  background-color: #7fb9c2;
+}
+
+tr:nth-child(even) {
+  background-color: #e7ffed ;
+}
+
+table .makeItBlue {
+  background-color: #628ca6;
+  color: white;
+}
+
