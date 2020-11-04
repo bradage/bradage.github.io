@@ -57,10 +57,16 @@
     }
 
     /*Image Rules*/
+    header picture img .logo {
+        width: 175px;
+        height: auto;
+        box-shadow: none;
+    }
+
     .mainImg {
         margin: 10px auto;
         width: 960px;
         height: auto;
-      }
-      
+    }
+
 }

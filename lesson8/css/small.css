@@ -7,7 +7,7 @@ main {
 
 header,
 footer {
-  background-color: #5D8BA3;
+  background-color: #103548;
 }
 
 header {
@@ -22,6 +22,7 @@ footer {
   padding: 5px;
   font-size: 14px;
   margin: 0px 5px 0px 5px;
+  color: #FFCE8B;
 }
 
 article {
@@ -50,7 +51,7 @@ h3 {
 
 h1 {
   font-size: 24px;
-  color: #442904;
+  color: #FFCE8B;
   margin: 15px 0px 0px 10px;
 }
 
@@ -62,7 +63,7 @@ h2 {
 .headerh3 {
   font-size: 14px;
   font-style: italic;
-  color: #442904;
+  color: #FFCE8B;
   margin: 0px 0px 0px 10px;
 }
 
@@ -125,13 +126,19 @@ a {
 }
 
 /*Image rules*/
+header picture img .logo {
+  width: 175px;
+  height: auto;
+  box-shadow: none;
+}
+
 img {
   width: 200px;
   height: auto;
 }
 
-picture.heroImage{
-  display:block;
+picture.heroImage {
+  display: block;
   width: 96%;
   margin: 0 2%;
 }
