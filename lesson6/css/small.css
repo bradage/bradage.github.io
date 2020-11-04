@@ -6,7 +6,7 @@ main {
 
 header,
 footer {
-  background-color: #5D8BA3;
+  background-color: #103548;
 }
 
 header {
@@ -21,6 +21,7 @@ footer {
   padding: 5px;
   font-size: 14px;
   margin: 0px 5px 0px 5px;
+  color: #FFCE8B;
 }
 
 article {
@@ -61,7 +62,7 @@ h2 {
 .headerh3 {
   font-size: 14px;
   font-style: italic;
-  color: white;
+  color: #FFCE8B;
   margin: 0px 0px 0px 10px;
 }
 
