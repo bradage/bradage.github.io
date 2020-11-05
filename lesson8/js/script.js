@@ -51,3 +51,8 @@ WebFont.load({
     ]
   }
 });
+
+//Sliding Scale
+function adjustScale(rating){
+  document.getElementById("scaleValue").innerHTML = rating;
+}
