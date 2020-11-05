@@ -3,6 +3,7 @@ table {
   text-align: center;
   border: 1px solid grey;
   border-spacing: 0;
+  box-shadow: 10px 10px 5px grey;
 }
 
 tr {
@@ -11,10 +12,12 @@ tr {
 
 td {
   border: 1px solid grey;
+  padding: 5px 5px;
 }
 
 thead tr th {
   font-size: larger;
+  padding: 5px 5px;
 }
 
 table thead tr th {
@@ -26,6 +29,10 @@ table thead tr th {
 table tfoot tr td {
   font-size: smaller;
   background-color: #7fb9c2;
+}
+
+tr:nth-child(5) td:nth-child(1){
+  font-style: italic;
 }
 
 tr:nth-child(even) {
