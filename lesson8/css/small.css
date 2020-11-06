@@ -200,10 +200,19 @@ textarea {
   height: 150px;
 }
 
+input,
+select {
+  width: 300px;
+}
+
+.brakemold {
+  width: auto;
+}
+
 .button {
   margin-left: 15px;
   background-color: #0571ec;
-  color:white;
+  color: white;
   padding: 10px 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;

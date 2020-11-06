@@ -50,8 +50,9 @@
         <form>
             <h4>Personal Information</h4>
             <fieldset>
-                <label for="fullName">Full Name<br>
-                    <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]" minlength="5" placeholder="Fist Last">
+                <label for="fullName">Full Name*<br>
+                    <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]" minlength="5"
+                        placeholder="Fist Last">
                 </label>
             </fieldset>
             <fieldset>
@@ -60,12 +61,12 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label for="telephone">Telephone<br>
+                <label for="telephone">Telephone*<br>
                     <input type="tel" id="telephone" name="telephone" required placeholder="555-555-5555">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="zip">Zip Code<br>
+                <label for="zip">Zip Code*<br>
                     <input type="number" id="zip" name="zip" required placeholder="83263">
                 </label>
             </fieldset>
@@ -109,7 +110,7 @@
             <fieldset>
                 <label for="stormRegion">Storm Region<br>
                     <select id="stormRegion" name="stormRegion" onchange="selection()">
-                        <option value="" disabled>Select Region ...</option>
+                        <option value="" selected disabled>Select Region ...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
@@ -119,11 +120,15 @@
             <fieldset>
                 <legend>Are you in danger?</legend>
                 <label for="yes">
-                    <input type="radio" id="yes" name="yes" value="1">
+                    <input class="brakemold" type="radio" id="yes" name="stormDanger" value="yes">
                     Yes
                 </label>
+                <label for="maybe">
+                    <input class="brakemold" type="radio" id="maybe" name="stormDanger" value="maybe">
+                    Maybe
+                </label>
                 <label for="no">
-                    <input type="radio" id="no" name="no" value="0">
+                    <input class="brakemold" type="radio" id="no" name="stormDanger" value="no">
                     No
                 </label>
             </fieldset>
@@ -132,7 +137,8 @@
                     <textarea id="addInfo" name="addInfo"></textarea>
                 </label>
             </fieldset>
-                <input type="button" value="Send Update" class="button" onclick="window.location.href = 'thanks.html'">
+            <input type="button" value="Send Update" class="button brakemold"
+                onclick="window.location.href = 'thanks.html'">
         </form>
         <div class="contact">
             <picture>
