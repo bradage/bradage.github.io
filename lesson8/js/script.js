@@ -60,7 +60,7 @@ function adjustScale(rating){
 //Dropdown selection
 function selection() {
   const s = document.querySelector('#selected');
-  const sel = document.querySelector('#selectbrowser');
+  const sel = document.querySelector('#stormRegion');
   s.style.diplay = "block";
   s,textContent = sel.value;
 }
