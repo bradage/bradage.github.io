@@ -57,7 +57,7 @@
     }
 
     /*Image Rules*/
-    header picture img .logo {
+    header picture img.logo {
         width: 175px;
         height: auto;
         box-shadow: none;
