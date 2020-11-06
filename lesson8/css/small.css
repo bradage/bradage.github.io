@@ -171,7 +171,7 @@ main picture.heroImage img {
 }
 
 img[data-src] {
-  filter: blur(0.25);
+  filter: blur(5px);
 }
 
 picture img {
@@ -190,7 +190,10 @@ img:hover {
   box-shadow: 10px 10px 5px #5D8BA3;
 }
 
-fieldset input.largerBox {
+textarea {
+  padding: 10px;
+  line-height: 1.5;
+  box-shadow: 2px 2px 2px grey;
   width: 300px;
   height: 150px;
 }
