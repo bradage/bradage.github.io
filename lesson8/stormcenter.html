@@ -50,33 +50,33 @@
         <form>
             <h4>Personal Information</h4>
             <fieldset>
-                <label for="fullName">Full Name
-                    <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]" minlength="5">
+                <label for="fullName">Full Name<br>
+                    <input type="text" id="fullName" name="fullName" required pattern="[A-Za-z]" minlength="5" placeholder="Fist Last">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="email">Email
+                <label for="email">Email<br>
                     <input type="email" id="email" name="email" placeholder="youremail@domain.com">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="telephone">Telephone
-                    <input type="tel" id="telephone" name="telephone" required>
+                <label for="telephone">Telephone<br>
+                    <input type="tel" id="telephone" name="telephone" required placeholder="555-555-5555">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="zip">Zip Code
-                    <input type="number" id="zip" name="zip" required>
+                <label for="zip">Zip Code<br>
+                    <input type="number" id="zip" name="zip" required placeholder="83263">
                 </label>
             </fieldset>
             <h4>Storm Information</h4>
             <fieldset>
-                <label for="stormDate">Storm Date
+                <label for="stormDate">Storm Date<br>
                     <input type="date" id="stormDate" name="stormDate">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="stormType">Storm Type
+                <label for="stormType">Storm Type<br>
                     <input list="stormTypeDataList" id="stormType" name="stormType">
                 </label>
                 <datalist id="stormTypeDataList">
@@ -88,7 +88,7 @@
                 </datalist>
             </fieldset>
             <fieldset>
-                <label for="stormSeverity">Storm Severity (1-10)
+                <label for="stormSeverity">Storm Severity (1-10)<br>
                     <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1"
                         list="scaleDataList" oninput="adjustScale(this.value)" onchange="adjustScale(this.value)">
                 </label>
@@ -107,7 +107,7 @@
                 </datalist>
             </fieldset>
             <fieldset>
-                <label for="stormRegion">Storm Region
+                <label for="stormRegion">Storm Region<br>
                     <select id="stormRegion" name="stormRegion" onchange="selection()">
                         <option value="" disabled>Select Region ...</option>
                         <option value="Preston">Preston</option>
@@ -132,9 +132,7 @@
                     <textarea type="text" id="addInfo" name="addInfo"></textarea>
                 </label>
             </fieldset>
-            <div class="button">
-                <input type="submit" value="Submit" onclick="window.location.href = 'thanks.html'">
-            </div>
+                <input type="button" value="Send Update" class="button" onclick="window.location.href = 'thanks.html'">
         </form>
         <div class="contact">
             <picture>
