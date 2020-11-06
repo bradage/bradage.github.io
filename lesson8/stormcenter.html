@@ -49,25 +49,39 @@
         <h2>Preston Idaho</h2>
         <div>
             <form>
-                <label for="fistName">First Name</label> <input type="text" id="firstName" name="firstName" required
-                    pattern="[A-Za-z]" minlength="5"><br>
-                <label for="email">Email</label><input type="email" id="email" name="email"
-                    placeholder="youremail@domain.com"><br>
-                <label for="telephone">Telephone</label> <input type="tel" id="telephone" name="telephone" required><br>
-                <label for="zip">Zip Code</label><input type="number" id="zip" name="zip" required><br>
-                <label for="stormDate">Storm Date</label><input type="date" id="stormDate" name="stormDate"><br>
-                <label for="stormType">Storm Type</label><input list="stormTypeDataList" id="stormType"
-                    name="stormType">
-                <datalist id="stormTypeDataList">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-                <br>
-                <label for="stormSeverity">Storm Severity (1-10)</label><input type="range" id="stormSeverity"
-                    name="stormSeverity" value="5" min="1" max="10" step="1" list="scaleDataList" oninput="adjustScale(this.value)" onchange="adjustScale(this.value)"><span id="scaleValue">5</span>
+                <fieldset>
+                    <label for="fistName">First Name</label> <input type="text" id="firstName" name="firstName" required
+                        pattern="[A-Za-z]" minlength="5">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label> <input type="email" id="email" name="email"
+                        placeholder="youremail@domain.com">
+                </fieldset>
+                <fieldset>
+                    <label for="telephone">Telephone</label> <input type="tel" id="telephone" name="telephone" required>
+                </fieldset>
+                <fieldset>
+                    <label for="zip">Zip Code</label> <input type="number" id="zip" name="zip" required>
+                </fieldset>
+                <fieldset>
+                    <label for="stormDate">Storm Date</label> <input type="date" id="stormDate" name="stormDate">
+                </fieldset>
+                <fieldset>
+                    <label for="stormType">Storm Type</label> <input list="stormTypeDataList" id="stormType"
+                        name="stormType">
+                    <datalist id="stormTypeDataList">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <label for="stormSeverity">Storm Severity (1-10)</label> <input type="range" id="stormSeverity"
+                        name="stormSeverity" value="5" min="1" max="10" step="1" list="scaleDataList"
+                        oninput="adjustScale(this.value)" onchange="adjustScale(this.value)"><span
+                        id="scaleValue">5</span>
                     <datalist id="scaleDataList">
                         <option value="1">
                         <option value="2">
@@ -79,13 +93,31 @@
                         <option value="8">
                         <option value="9">
                         <option value="10">
-                    </datalist><br>
-                <label for="stormRegion">Storm Region</label><input type="number" id="stormRegion"
-                    name="stormRegion"><br>
-                <label for="inDanger">Are you in danger?</label><input type="radio" id="inDanger" name="inDanger"><br>
-                <label for="addInfo">Additional Information</label><input type="textarea" id="addInfo"
-                    name="addInfo"><br>
-                <input type="submit" value="submit">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <label for="stormRegion">Storm Region</label>
+                    <select list="stormRegionDataList" id="stormRegion" name="stormRegion" onchange="selection()">
+                        <datalist id="stormRegionDataList">
+                            <option value="" disabled>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </datalist>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend for="inDanger">Are you in danger?</legend>
+                    <input type="radio" id="yes" name="yes" value="1"><label for="yes">Yes</label>
+                    <input type="radio" id="no" name="no" value="0"><label for="no">No</label>
+                </fieldset>
+                <fieldset>
+                    <label for="addInfo">Additional Information</label><br>
+                    <input class="largerBox" type="textarea" id="addInfo" name="addInfo">
+                </fieldset>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
         <div class="contact">
@@ -94,9 +126,9 @@
             </picture>
             <section class="contactInfo">
                 <h3>Weather Update</h3>
-                <p>P Sherman 42 Wallaby Way<br>
+                <p>P Sherman 42 Wallaby Way</fieldset>
                     Preston, Idaho 83263</p>
-                <p>&#9990; (208) 867-5309<br>
+                <p>&#9990; (208) 867-5309</fieldset>
                     &#9993; weatherupdate@gmail.com</p>
                 <section>
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>

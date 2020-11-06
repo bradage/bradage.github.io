@@ -72,6 +72,10 @@ p {
   font-size: 12px;
 }
 
+fieldset {
+  border: none;
+}
+
 
 /*Nav rules */
 nav {
@@ -184,4 +188,9 @@ figcaption {
 
 img:hover {
   box-shadow: 10px 10px 5px #5D8BA3;
+}
+
+fieldset input.largerBox {
+  width: 300px;
+  height: 150px;
 }

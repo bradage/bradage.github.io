@@ -56,3 +56,11 @@ WebFont.load({
 function adjustScale(rating){
   document.getElementById("scaleValue").innerHTML = rating;
 }
+
+//Dropdown selection
+function selection() {
+  const s = document.querySelector('#selected');
+  const sel = document.querySelector('#selectbrowser');
+  s.style.diplay = "block";
+  s,textContent = sel.value;
+}
