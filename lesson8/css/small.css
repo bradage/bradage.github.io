@@ -203,6 +203,7 @@ textarea {
 input,
 select {
   width: 300px;
+  height: 45px;
 }
 
 .brakemold {
@@ -217,4 +218,9 @@ select {
   border-radius: 5px;
   box-shadow: 2px 2px 2px grey;
   font-family: 'Hind', sans-serif;
+}
+
+legend.sectionNames {
+  font-size: 20px;
+  font-weight: bold;
 }
