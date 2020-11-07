@@ -192,6 +192,10 @@ img:hover {
   box-shadow: 10px 10px 5px #5D8BA3;
 }
 
+img.contactImg {
+  display:none;
+}
+
 /*----------- FORM -----------*/  
 textarea {
   box-shadow: 2px 2px 2px grey;

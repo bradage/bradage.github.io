@@ -125,6 +125,12 @@ a {
 }
 
 /*Image rules*/
+header picture img.logo {
+  width: 175px;
+  height: auto;
+  box-shadow: none;
+}
+
 img {
   width: 200px;
   height: auto;
@@ -160,7 +166,7 @@ main picture.heroImage img {
 }
 
 img[data-src] {
-  filter: blur(0.25 rem);
+  filter: blur(0.25);
 }
 
 picture img {

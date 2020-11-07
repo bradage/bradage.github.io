@@ -51,16 +51,16 @@
             <fieldset>
                 <legend class="sectionNames">Personal Information</legend>
                 <label for="fullName" class="top">Full Name*
-                    <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]" minlength="5" required>
+                    <input type="text" name="fullName" pattern="[A-Za-z]+" minlength="5" required>
                 </label>
                 <label for="email" class="top">Email
-                    <input type="email" id="email" name="email" placeholder="youremail@domain.com">
+                    <input type="email" name="email" placeholder="youremail@domain.com">
                 </label>
                 <label for="phone" class="top">Telephone*
-                    <input type="tel" id="phone" name="phone" required placeholder="5555555555">
+                    <input type="tel" name="phone" required placeholder="5555555555">
                 </label>
                 <label for="zip" class="top">Zip Code*
-                    <input type="number" id="zip" name="zip" required placeholder="83263">
+                    <input type="number" name="zip" required placeholder="83263">
                 </label>
             </fieldset>
             <fieldset>
@@ -120,7 +120,7 @@
                     <textarea id="addInfo" name="addInfo"></textarea>
                 </label>
             </fieldset>
-            <input type="button" value="Send Update" class="button brakemold">
+            <input type="submit" value="Send Update" class="button brakemold">
         </form>
         <div class="contact">
             <picture>

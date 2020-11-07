@@ -68,5 +68,18 @@
         width: 960px;
         height: auto;
     }
+    
+    img.contactImg {
+        display: block;
+        float:left;
+        width: 250px;
+        height: auto;
+        padding: 15px 15px;
+      }
+
+      .contactInfo {
+          display: block;
+          margin-left: 400px;;
+      }
 
 }
