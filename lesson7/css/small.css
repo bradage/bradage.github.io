@@ -166,7 +166,7 @@ main picture.heroImage img {
 }
 
 img[data-src] {
-  filter: blur(0.25);
+  filter: blur(.25);
 }
 
 figure img {
