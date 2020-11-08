@@ -169,7 +169,7 @@ img[data-src] {
   filter: blur(0.25);
 }
 
-picture img {
+figure img {
   filter: blur(0);
   transition: filter 0.5s;
 }
