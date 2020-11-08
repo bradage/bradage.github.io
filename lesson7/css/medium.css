@@ -17,7 +17,7 @@
     }
 
     img {
-        width: 300px;
+        width: 250px;
         height: auto;
     }
 
@@ -56,6 +56,9 @@
         grid-gap: 20px;
     }
 
+    main h2 {
+        margin-left: 40px;
+      }
     /*Image Rules*/
     header picture img.logo {
         width: 175px;
