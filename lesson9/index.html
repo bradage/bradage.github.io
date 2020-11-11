@@ -55,57 +55,7 @@
                 <source srcset="images/heroImageFull.jpg" media="(min-width: 800px)">
                 <img src="images/heroImagex400.jpg" alt="Hills above Preston">
             </picture>
-            <section class="currentSummary">
-                <h3 class="summaryh3">Weather Summary</h3>
-                <hr>
-                <table>
-                    <tr>
-                        <td class="tdLeft">Currently</td>
-                        <td class="tdCenter">|</td>
-                        <td class="tdRight">&#9788;</td>
-                    </tr>
-                    <tr>
-                        <td class="tdLeft">High</td>
-                        <td class="tdCenter">|</td>
-                        <td class="tdRight" id="temp">54 &#8457;</td>
-                    </tr>
-                    <tr>
-                        <td class="tdLeft">Wind Chill</td>
-                        <td class="tdCenter">|</td>
-                        <td class="tdRight" id="windchill">-</td>
-                    </tr>
-                    <tr>
-                        <td class="tdLeft">Humidity</td>
-                        <td class="tdCenter">|</td>
-                        <td class="tdRight">65%</td>
-                    </tr>
-                    <tr>
-                        <td class="tdLeft">Wind Speed</td>
-                        <td class="tdCenter">|</td>
-                        <td class="tdRight" id="wspeed">5 mph</td>
-                    </tr>
-                </table>
-            </section>
-        </div>
-        <h2>5 Day Forecast</h2>
-        <section class="forecast">
-            <table>
-                <tr>
-                    <td class="tdForecast">Monday</td>
-                    <td class="tdForecast">Tuesday</td>
-                    <td class="tdForecast">Wedensday</td>
-                    <td class="tdForecast">Thursday</td>
-                    <td class="tdForecast">Friday</td>
-                </tr>
-                <tr>
-                    <td class="tdForecast">&#9728;</td>
-                    <td class="tdForecast">&#9728;</td>
-                    <td class="tdForecast">&#9728;</td>
-                    <td class="tdForecast">&#9729;</td>
-                    <td class="tdForecast">&#9730;</td>
-                </tr>
-            </table>
-        </section>
+            <div class="towns"></div>
         <div class="mainArticle">
             <picture>
                 <img class="articleImg" src="images/fall_leaves.jpg" alt="Fall leaves">
@@ -157,10 +107,11 @@
         </div>
     </main>
     <footer>
-        &copy; Weather Update | Bradey Merrill |
-        Last Updated: <span id="lastMod"></span>
+        &copy; Weather Update | Bradey Merrill | <a href="home-wireframes.html">Wire Frames</a> | 
+        Last Updated: <span id="lastMod"></span> 
     </footer>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/townData.js"></script>
 </body>
 
 </html>

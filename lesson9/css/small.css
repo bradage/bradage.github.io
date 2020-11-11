@@ -17,7 +17,7 @@ header {
   padding: 10px 0px 10px 0px;
 }
 
-footer {
+footer, footer a {
   text-align: center;
   padding: 5px;
   font-size: 14px;
@@ -194,6 +194,18 @@ img:hover {
 
 img.contactImg {
   display:none;
+}
+
+img.wireframeMobile {
+  width: 300px;
+  height: auto;
+  box-shadow: none;
+}
+
+img.wireframeLarge {
+  width: 600px;
+  height: auto;  
+  box-shadow: none;
 }
 
 /*----------- FORM -----------*/  
