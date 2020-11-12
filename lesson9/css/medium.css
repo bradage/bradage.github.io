@@ -51,16 +51,33 @@
     }
 
     .mainDiv {
+        position: relative;
+    }
+
+    .galleryDiv {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+    }
+
+    main section div section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section div section:nth-child(odd) img {
+        grid-column: 2;
+    }
+
+    main section div section:nth-child(odd) .info {
+        grid-column: 1;
+        grid-row: 1;
     }
 
     /*Image Rules*/
     header picture img.logo {
         width: 175px;
         height: auto;
-        box-shadow: none;
     }
 
     .mainImg {
@@ -68,18 +85,19 @@
         width: 960px;
         height: auto;
     }
-    
+
     img.contactImg {
         display: block;
-        float:left;
+        float: left;
         width: 250px;
         height: auto;
         padding: 15px 15px;
-      }
+    }
 
-      .contactInfo {
-          display: block;
-          margin-left: 400px;;
-      }
+    .contactInfo {
+        display: block;
+        margin-left: 400px;
+        ;
+    }
 
 }

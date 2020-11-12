@@ -24,9 +24,23 @@
     }
 
     .mainDiv {
+        position: relative;
+    }
+
+    .galleryDiv {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+    }
+
+    .towns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    main section div section {
+        border: 1px solid grey;
     }
 
     img {
@@ -65,7 +79,6 @@
     header picture img.logo {
         width: 175px;
         height: auto;
-        box-shadow: none;
     }
 
     .mainImg {

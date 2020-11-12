@@ -69,6 +69,27 @@ h2 {
   margin: 0px 0px 0px 10px;
 }
 
+main section div section {
+  text-align: center;
+  background-color: #FFCE8B;
+  padding-bottom: 15px;
+}
+
+main section div section img {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+main section div section h2 {
+  text-align: center;
+}
+
+main section div section h4 {
+  font-style: italic;
+}
+
 p {
   font-family: 'Sawarabi Gothic', sans-serif;
   font-size: 12px;
@@ -153,7 +174,11 @@ main picture.heroImage img {
   width: 100%;
 }
 
-.mainDiv {
+.mainDiv {  
+  position: relative;
+}
+
+.galleryDiv{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
@@ -188,7 +213,7 @@ figcaption {
   width: 200px;
 }
 
-img:hover {
+figure img:hover {
   box-shadow: 10px 10px 5px #5D8BA3;
 }
 
