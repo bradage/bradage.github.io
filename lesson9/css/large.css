@@ -45,17 +45,25 @@
 
     main section div section {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* main section div section:nth-child(odd) img, main section div section:nth-child(even) img {
-        grid-column: 1;
+    main section div section img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
-    main section div section:nth-child(odd) .info {
-        grid-column: 1;
-        grid-row: 1;
-    } */
+    main section div section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    div.info {
+        text-align: center;
+        width: 100%;
+    }
 
     img {
         width: 600px;
@@ -105,7 +113,7 @@
         width: 300px;
         height: auto;
         float: right;
-        padding: 10px;
+        padding: 15px;
     }
 
     .contactImg {
@@ -165,14 +173,16 @@
 
     }
 
-    .mainArticle {
+    article.mainArticle {
         display: block;
         position: relative;
         width: 100%;
         background-color: #5D8BA3;
+        height: 225px;
+        margin:
     }
 
-    .contact {
+    section.contact {
         display: block;
         position: relative;
         width: 100%;

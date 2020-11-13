@@ -76,15 +76,15 @@ main section div.mainTownsDiv {
 
 main section div section img {
   width: 50%;
-  height: auto;
-  margin: 0 auto;
+  height: 50%;
+  margin: auto;
+  padding: 5px;
 }
 
 main section div section {
   display: flex;
   flex-direction: row;
-  background-color: #FFCE8B;  
-  text-align: center;
+  background-color: #FFCE8B; 
   padding: 15px;
   margin: 10px 0;
 }
@@ -93,12 +93,12 @@ main section div section:nth-child(even){
   flex-direction: row-reverse;
 }
 
-main section div section h2 {
+div.info, div.info h2  {
   text-align: center;
 }
 
-main section div section h4 {
-  font-style: italic;
+div.info h4 {
+  font-style: italic; 
 }
 
 p {
