@@ -29,12 +29,12 @@ fetch(requestURL)
         img.setAttribute('src', 'images/' + towns[i].photo);
         img.setAttribute('alt', towns[i].name);
         
+        info.appendChild(h2);
+        info.appendChild(motto);
+        info.appendChild(founded);
+        info.appendChild(pop);
+        info.appendChild(avgRain);
         town.appendChild(info);
-        town.appendChild(h2);
-        town.appendChild(motto);
-        town.appendChild(founded);
-        town.appendChild(pop);
-        town.appendChild(avgRain);
         town.appendChild(img);
 
         document.querySelector('div.towns').appendChild(town);
