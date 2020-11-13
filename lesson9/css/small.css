@@ -69,18 +69,29 @@ h2 {
   margin: 0px 0px 0px 10px;
 }
 
-main section div section {
-  text-align: center;
-  background-color: #FFCE8B;
-  padding-bottom: 15px;
+main section div.mainTownsDiv {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section div section img {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 }
 
+main section div section {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFCE8B;  
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+main section div section:nth-child(even){
+  flex-direction: row-reverse;
+}
 
 main section div section h2 {
   text-align: center;

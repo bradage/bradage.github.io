@@ -43,6 +43,20 @@
         border: 1px solid grey;
     }
 
+    main section div section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* main section div section:nth-child(odd) img, main section div section:nth-child(even) img {
+        grid-column: 1;
+    }
+
+    main section div section:nth-child(odd) .info {
+        grid-column: 1;
+        grid-row: 1;
+    } */
+
     img {
         width: 600px;
         height: auto;
