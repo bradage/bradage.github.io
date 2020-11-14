@@ -33,34 +33,6 @@
         grid-gap: 20px;
     }
 
-    .towns {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-
-    main section div section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    main section div section img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    main section div section {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
-
-    div.info {
-        text-align: center;
-        width: 100%;
-    }
-
     img {
         width: 600px;
         height: auto;
@@ -90,6 +62,31 @@
     footer {
         font-size: 16px;
         margin: 0% 15% 0% 15%;
+    }
+
+    /* Town Cards */
+    div.towns {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    main div section div section img  {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main div section div section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    div.info {
+        text-align: center;
+        width: 100%;
     }
 
     /*Image Rules*/
@@ -169,19 +166,12 @@
 
     }
 
-    article.mainArticle {
+    .mainArticle {
         display: block;
-        position: relative;
-        width: 100%;
         background-color: #5D8BA3;
-        height: 225px;
-        margin:
     }
 
     section.contact {
-        display: block;
-        position: relative;
-        width: 100%;
         background-color: #5D8BA3;
     }
 

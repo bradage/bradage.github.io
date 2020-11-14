@@ -17,7 +17,8 @@ header {
   padding: 10px 0px 10px 0px;
 }
 
-footer, footer a {
+footer,
+footer a {
   text-align: center;
   padding: 5px;
   font-size: 14px;
@@ -86,7 +87,8 @@ main div section div section img {
   width: 96%;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 10px;;
+  padding-bottom: 10px;
+  ;
 }
 
 main section div section {
@@ -96,7 +98,8 @@ main section div section {
   background-color: #FFCE8B;
 }
 
-div.info, div.info h2 {
+div.info,
+div.info h2 {
   text-align: center;
   width: 100%;
 }
@@ -185,11 +188,11 @@ main picture.heroImage img {
   width: 100%;
 }
 
-.mainDiv {  
+.mainDiv {
   position: relative;
 }
 
-.galleryDiv{
+.galleryDiv {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
@@ -236,7 +239,7 @@ figure img:hover {
 }
 
 img.contactImg {
-  display:none;
+  display: none;
 }
 
 img.wireframeMobile {
@@ -247,11 +250,11 @@ img.wireframeMobile {
 
 img.wireframeLarge {
   width: 600px;
-  height: auto;  
+  height: auto;
   box-shadow: none;
 }
 
-/*----------- FORM -----------*/  
+/*----------- FORM -----------*/
 textarea {
   box-shadow: 2px 2px 2px grey;
 }
@@ -272,20 +275,23 @@ form input.button {
   max-width: 15rem;
 }
 
-form legend{
+form legend {
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
 }
 
-form label.top, form div {
+form label.top,
+form div {
   display: block;
   padding-top: 15px;
   color: rgb(43, 42, 42);
   font-size: 16px;
 }
 
-form label.top input, form label.top select, form textarea {
+form label.top input,
+form label.top select,
+form textarea {
   display: block;
   color: rgb(43, 42, 42);
   font-size: 16px;

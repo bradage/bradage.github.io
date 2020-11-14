@@ -60,51 +60,52 @@
         grid-gap: 20px;
     }
 
-    div.info{
-       width: 50%;
+    div.info {
+        width: 50%;
     }
 
-    div.info h2{
+    div.info h2 {
         font-size: 24px;
-     }
+    }
 
-     div.info h4{
+    div.info h4 {
         font-size: 18px;
-     }
+    }
 
 
-     /* Town Cards */
-     div.mainTownsDiv {
+    /* Town Cards */
+    div.mainTownsDiv {
         display: flex;
         flex-wrap: wrap;
-      }
-      
-      main div section div section img {
+    }
+
+    main div section div section img {
         width: 50%;
         height: 50%;
         margin: auto;
         padding: 5px;
-      }
-      
-      main section div section {
+    }
+
+    main section div section {
         display: flex;
         flex-direction: row;
-        background-color: #FFCE8B; 
+        background-color: #FFCE8B;
         padding: 15px;
         margin: 10px 0;
-      }
-      
-      main section div section:nth-child(even){
+    }
+
+    main section div section:nth-child(even) {
         flex-direction: row-reverse;
-      }
-      
-      div.info, div.info h2  {
+    }
+
+    div.info,
+    div.info h2 {
         text-align: center;
-      }
-      
-      div.info h4 {
-        font-style: italic; 
-      }
+    }
+
+    div.info h4 {
+        font-style: italic;
+    }
 
     /*Image Rules*/
     header picture img.logo {
