@@ -25,9 +25,11 @@ footer, footer a {
   color: #FFCE8B;
 }
 
-article {
+.mainArticle {
   margin: 10px 15px 10px 15px;
   text-align: justify;
+  padding: 0 20px;
+  background-color: #5D8BA3;
 }
 
 /*General fonts size and color */
@@ -69,36 +71,34 @@ h2 {
   margin: 0px 0px 0px 10px;
 }
 
-main section div.mainTownsDiv {
-  display: flex;
-  flex-wrap: wrap;
+/* Town Cards */
+div.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
 }
 
-main section div section img {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  padding: 5px;
+div.towns {
+  padding: 5px 0;
+}
+
+main div section div section img {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;;
 }
 
 main section div section {
-  display: flex;
-  flex-direction: row;
-  background-color: #FFCE8B; 
-  padding: 15px;
-  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  background-color: #FFCE8B;
 }
 
-main section div section:nth-child(even){
-  flex-direction: row-reverse;
-}
-
-div.info, div.info h2  {
+div.info, div.info h2 {
   text-align: center;
-}
-
-div.info h4 {
-  font-style: italic; 
+  width: 100%;
 }
 
 p {
@@ -226,6 +226,13 @@ figcaption {
 
 figure img:hover {
   box-shadow: 10px 10px 5px #5D8BA3;
+}
+
+.articleImg {
+  width: 200px;
+  height: auto;
+  float: right;
+  padding: 15px;
 }
 
 img.contactImg {

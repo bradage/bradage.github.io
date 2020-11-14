@@ -40,10 +40,6 @@
     }
 
     main section div section {
-        border: 1px solid grey;
-    }
-
-    main section div section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
