@@ -89,6 +89,15 @@
         width: 100%;
     }
 
+    /* Weather Summary */
+    tr {
+        line-height: 25px;
+    }
+
+    td {
+        vertical-align: middle;
+    }
+
     /*Image Rules*/
 
     header picture img.logo {
@@ -137,16 +146,19 @@
 
     .tdLeft {
         text-align: right;
+        vertical-align: middle;
         color: #D09D58;
     }
 
     .tdRight {
         text-align: left;
+        vertical-align: middle;
         color: whitesmoke;
     }
 
     .tdCenter {
         color: #FFCE8B;
+        vertical-align: middle;
     }
 
     .forecast {
@@ -179,6 +191,12 @@
         float: right;
         padding-right: 30em;
 
+    }
+
+    #icon{
+        width: 30px;
+        height: 30px;
+        background-color: white;
     }
 
 }
