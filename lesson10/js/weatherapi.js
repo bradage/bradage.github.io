@@ -1,20 +1,21 @@
 const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 
+//Fetch for Weather Summary
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     // console.log(jsObject);
-    document.getElementById('current-temp').textContent = parseFloat(jsObject.main.temp).toFixed(1);
+    document.getElementById('current-temp').textContent = parseFloat(jsObject.main.temp).toFixed(0);
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
     const desc = jsObject.weather[0].description; // note how we reference the weather array
-    //document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
     document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
     document.getElementById('icon').setAttribute('alt', desc);
     document.getElementById('icon').setAttribute('title', desc);
     document.getElementById('humidity').textContent = jsObject.main.humidity;    
-    document.getElementById('wspeed').textContent = parseFloat(jsObject.wind.speed).toFixed(1);   
-    document.getElementById('hi-temp').textContent = parseFloat(jsObject.main.temp_max).toFixed(1);
-    document.getElementById('low-temp').textContent = parseFloat(jsObject.main.temp_min).toFixed(1);
+    document.getElementById('wspeed').textContent = parseFloat(jsObject.wind.speed).toFixed(0);   
+    document.getElementById('hi-temp').textContent = parseFloat(jsObject.main.temp_max).toFixed(0);
+    document.getElementById('low-temp').textContent = parseFloat(jsObject.main.temp_min).toFixed(0);
 
     //gets input of temperature and wind speed
     //display "N/A" if inputs don't meet requirements
@@ -31,7 +32,7 @@ fetch(apiURL)
       wchill = "N/A";
     }
 
-    document.getElementById('windchill').textContent = parseFloat(wchill).toFixed(1);
+    document.getElementById('windchill').textContent = parseFloat(wchill).toFixed(0);
 
     //windhcill function that calulcates winchill from temp and speed.
     function windChill(tempF, speed) {
@@ -39,3 +40,56 @@ fetch(apiURL)
       return f
     }
   });
+
+
+//Weather Forecast URL
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&cnt=5&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+
+fetch(forecastURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    //console.log(jsObject);
+    const days = jsObject['list'];
+    for (let i = 0; i < days.length; i++) {
+      imagesrc = 'https://openweathermap.org/img/wn/' + days[i].weather[0].icon + '.png';
+      let forecast = document.createElement('section');
+      let dow = document.createElement('div');
+      dow.className = 'dayOfWeek';
+      let curimg = document.createElement('div');
+      curimg.className = 'currentImage';
+      let curtemp = document.createElement('div');
+      curtemp.className = 'currentTemp';
+      let day = document.createElement('p');
+      let img = document.createElement('img');
+      let temp = document.createElement('p');
+
+      // console.log(new Date().getDay());
+      // let dat = days[i].dt;
+      day.textContent = days[i].dt_txt;
+      img.setAttribute('src', imagesrc);
+      img.setAttribute('alt', days[i].weather.description);
+      img.setAttribute('title', days[i].weather.main);
+      temp.textContent = parseInt(days[i].main.temp);
+
+      dow.appendChild(day);
+      curimg.appendChild(img);
+      curtemp.appendChild(temp);
+      forecast.appendChild(dow);
+      forecast.appendChild(curimg);
+      forecast.appendChild(curtemp);
+
+      document.querySelector('div.forecast').appendChild(forecast);
+    }
+
+    
+      
+  });
+
+  // function getDatyOfWeek(d){
+  //   let dayofweek = [
+  //     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+  //   ]
+
+    
+  //   return dayofweek[dow];
+  // }
