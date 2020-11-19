@@ -23,8 +23,8 @@ fetch(apiURL)
     //f is wind chill factor in Farenheit, t is temperature in fahrenheit and 2 is wind speed in miles per hour
     //Input requirements: "Wind Chill Temperature is officially defined for temperatures at or below 10 °C (50 °F) and wind speeds above 4.8 kilometers per hour (3.0 mph)."
 
-    let temp = jsObject.main.temp;
-    let wspeed = jsObject.wind.speed;
+    let temp = parseFloat(jsObject.main.temp).toFixed(0);
+    let wspeed = parseFloat(jsObject.wind.speed).toFixed(0);
 
     if (temp >= 50 && wspeed > 3.0) {
       var wchill = windChill(temp, wspeed);
