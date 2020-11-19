@@ -72,7 +72,7 @@
         grid-gap: 15px;
     }
 
-    main div section div section img  {
+    main div section div section img {
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -116,12 +116,6 @@
         height: auto;
         float: right;
         padding: 15px;
-    }
-
-    .contactImg {
-        width: 300px;
-        height: auto;
-        margin: 1em 0em 0em 1em;
     }
 
     .socialImg {
@@ -178,7 +172,8 @@
     div.dayOfWeek {
         text-align: center;
         font-family: 'Hind', sans-serif;
-        background-color: #5D8BA3;;
+        background-color: #234E66;
+        ;
         color: #FFCE8B;
         font-weight: bold;
         line-height: 25px;
@@ -190,33 +185,39 @@
     }
 
     .currentImage img {
-        width:80px;
+        width: 80px;
         height: auto;
         margin: 0 auto;
     }
 
     .currentTemp p {
-        text-align: center;        
+        text-align: center;
         font-family: 'Hind', sans-serif;
     }
 
-    
+
     .mainArticle {
         display: block;
         background-color: #5D8BA3;
     }
 
-    section.contact {
+    /* Contact info */
+    div.contact {
+        display: block;
         background-color: #5D8BA3;
     }
 
-    .contactInfo {
-        float: right;
-        padding-right: 30em;
-
+    contactImg {
+        width: 300px;
+        height: auto;
+        margin: 1em 0em 0em 1em;
     }
 
-    #icon{
+    .contactInfo {
+        padding-right: 30em;
+    }
+
+    #icon {
         width: 30px;
         height: 30px;
         background-color: white;
