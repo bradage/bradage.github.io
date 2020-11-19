@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 
 //Fetch for Weather Summary
 
@@ -12,8 +12,8 @@ fetch(apiURL)
     document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
     document.getElementById('icon').setAttribute('alt', desc);
     document.getElementById('icon').setAttribute('title', desc);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;    
-    document.getElementById('wspeed').textContent = parseFloat(jsObject.wind.speed).toFixed(0);   
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('wspeed').textContent = parseFloat(jsObject.wind.speed).toFixed(0);
     document.getElementById('hi-temp').textContent = parseFloat(jsObject.main.temp_max).toFixed(0);
     document.getElementById('low-temp').textContent = parseFloat(jsObject.main.temp_min).toFixed(0);
 
@@ -43,7 +43,7 @@ fetch(apiURL)
 
 
 //Weather Forecast URL
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&cnt=5&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 
 fetch(forecastURL)
   .then((response) => response.json())
@@ -51,45 +51,47 @@ fetch(forecastURL)
     //console.log(jsObject);
     const days = jsObject['list'];
     for (let i = 0; i < days.length; i++) {
-      imagesrc = 'https://openweathermap.org/img/wn/' + days[i].weather[0].icon + '.png';
-      let forecast = document.createElement('section');
-      let dow = document.createElement('div');
-      dow.className = 'dayOfWeek';
-      let curimg = document.createElement('div');
-      curimg.className = 'currentImage';
-      let curtemp = document.createElement('div');
-      curtemp.className = 'currentTemp';
-      let day = document.createElement('p');
-      let img = document.createElement('img');
-      let temp = document.createElement('p');
+      if (days[i].dt_txt.includes("18:00:00")) {
+        imagesrc = 'https://openweathermap.org/img/wn/' + days[i].weather[0].icon + '.png';
+        let forecast = document.createElement('section');
+        forecast.className = 'forecastCard'
+        let dow = document.createElement('div');
+        dow.className = 'dayOfWeek';
+        let curimg = document.createElement('div');
+        curimg.className = 'currentImage';
+        let curtemp = document.createElement('div');
+        curtemp.className = 'currentTemp';
+        let day = document.createElement('p');
+        let img = document.createElement('img');
+        let temp = document.createElement('p');
 
-      // console.log(new Date().getDay());
-      // let dat = days[i].dt;
-      day.textContent = days[i].dt_txt;
-      img.setAttribute('src', imagesrc);
-      img.setAttribute('alt', days[i].weather.description);
-      img.setAttribute('title', days[i].weather.main);
-      temp.textContent = parseInt(days[i].main.temp);
+        // console.log(new Date().getDay());
+        // let dat = days[i].dt;
+        day.textContent = getDayOfWeek(new Date());
+        img.setAttribute('src', imagesrc);
+        img.setAttribute('alt', days[i].weather.description);
+        img.setAttribute('title', days[i].weather.main);
+        temp.textContent = parseInt(days[i].main.temp) + ' F';
 
-      dow.appendChild(day);
-      curimg.appendChild(img);
-      curtemp.appendChild(temp);
-      forecast.appendChild(dow);
-      forecast.appendChild(curimg);
-      forecast.appendChild(curtemp);
+        dow.appendChild(day);
+        curimg.appendChild(img);
+        curtemp.appendChild(temp);
+        forecast.appendChild(dow);
+        forecast.appendChild(curimg);
+        forecast.appendChild(curtemp);
 
-      document.querySelector('div.forecast').appendChild(forecast);
+        document.querySelector('div.forecast').appendChild(forecast);
+      }
     }
 
-    
-      
+
+
   });
 
-  // function getDatyOfWeek(d){
-  //   let dayofweek = [
-  //     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-  //   ]
+function getDayOfWeek(d) {
+  let dayofweek = [
+    "Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat",
+  ]
 
-    
-  //   return dayofweek[dow];
-  // }
+  return dayofweek[d.getDay()];
+}

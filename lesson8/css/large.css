@@ -158,4 +158,8 @@
 
     }
 
+    form  fieldset {
+        margin: auto;
+    }
+
 }

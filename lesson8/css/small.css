@@ -215,6 +215,7 @@ form input.button {
   font-family: 'Hind', sans-serif;
   width: 96%;
   max-width: 15rem;
+  display: block;
 }
 
 form legend{
@@ -246,6 +247,9 @@ form label.inlb {
   padding: 8px 12px;
 }
 
+form fieldset {
+  margin: auto;
+}
 /*
 form label.top input:required {
   border-left: red solid 6px;
