@@ -124,56 +124,34 @@
     }
 
     .currentSummary {
-        display: block;
-        position: absolute;
         margin: 3em 0em 0em 3em;
-        background-color: #234E66;
-        opacity: .9;
         padding: .65em;
-    }
-
-    .summaryh3 {
-        color: #D09D58;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-
-    .tdLeft {
-        text-align: right;
-        vertical-align: middle;
-        color: #D09D58;
-    }
-
-    .tdRight {
-        text-align: left;
-        vertical-align: middle;
-        color: whitesmoke;
-    }
-
-    .tdCenter {
-        color: #FFCE8B;
-        vertical-align: middle;
-    }
+    }   
 
     /* Forecast */
+    section.forecast {
+        display: block;
+    }
+
     div.forecast {
         display: grid;
         max-width: 900px;
         grid-template-columns: repeat(5, 150px);
         justify-content: center;
-        margin: auto;
+        /* margin: auto; */
     }
 
     section.forecastCard {
+        display: inherit;
         padding: 3px 3px;
         border: 2px solid black;
+        background: #5D8BA3;
     }
 
     div.dayOfWeek {
         text-align: center;
         font-family: 'Hind', sans-serif;
         background-color: #234E66;
-        ;
         color: #FFCE8B;
         font-weight: bold;
         line-height: 25px;
@@ -193,6 +171,7 @@
     .currentTemp p {
         text-align: center;
         font-family: 'Hind', sans-serif;
+        color: white;
     }
 
 

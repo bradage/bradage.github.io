@@ -1,3 +1,8 @@
+body {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-size: 12px;
+}
+
 main {
   display: grid;
   justify-content: center;
@@ -70,6 +75,17 @@ h2 {
   font-style: italic;
   color: #FFCE8B;
   margin: 0px 0px 0px 10px;
+}
+
+/* Pancake message */
+#bannerPancakes {
+  background: yellow;
+  padding: 1px 0;
+}
+
+#bannerPancakes p {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* Town Cards */
@@ -198,13 +214,36 @@ main picture.heroImage img {
   grid-gap: 20px;
 }
 
+/* Weather Summary */
 .currentSummary {
   position: absolute;
-  top: 1rem;
-  background-color: seagreen;
-  opacity: .8;
-  padding: 5px;
-  margin: 0 0 0 20px;
+  top: 0px;
+  background-color: #234E66;
+  opacity: .9;
+  margin: 0 0 0 15px;
+}
+
+.summaryh3 {
+  color: #D09D58;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.tdLeft {
+  text-align: right;
+  vertical-align: middle;
+  color: #D09D58;
+}
+
+.tdRight {
+  text-align: left;
+  vertical-align: middle;
+  color: whitesmoke;
+}
+
+.tdCenter {
+  color: #FFCE8B;
+  vertical-align: middle;
 }
 
 .forecast {

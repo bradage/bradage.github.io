@@ -7,11 +7,7 @@ fetch(apiURL)
   .then((jsObject) => {
     // console.log(jsObject);
     document.getElementById('current-temp').textContent = parseFloat(jsObject.main.temp).toFixed(0);
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-    const desc = jsObject.weather[0].description; // note how we reference the weather array
-    document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);
-    document.getElementById('icon').setAttribute('title', desc);
+    document.getElementById('current').textContent =  jsObject.weather[0].description;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('wspeed').textContent = parseFloat(jsObject.wind.speed).toFixed(0);
     document.getElementById('hi-temp').textContent = parseFloat(jsObject.main.temp_max).toFixed(0);
@@ -26,7 +22,7 @@ fetch(apiURL)
     let temp = parseFloat(jsObject.main.temp).toFixed(0);
     let wspeed = parseFloat(jsObject.wind.speed).toFixed(0);
 
-    if (temp >= 50 && wspeed > 3.0) {
+    if (temp <= 50 && wspeed > 3.0) {
       var wchill = windChill(temp, wspeed);
     } else {
       wchill = "N/A";
@@ -52,7 +48,7 @@ fetch(forecastURL)
     const days = jsObject['list'];
     for (let i = 0; i < days.length; i++) {
       if (days[i].dt_txt.includes("18:00:00")) {
-        imagesrc = 'https://openweathermap.org/img/wn/' + days[i].weather[0].icon + '.png';
+        imagesrc = 'https://api.openweathermap.org/img/w/' + days[i].weather[0].icon + '.png';
         let forecast = document.createElement('section');
         forecast.className = 'forecastCard'
         let dow = document.createElement('div');
@@ -65,13 +61,11 @@ fetch(forecastURL)
         let img = document.createElement('img');
         let temp = document.createElement('p');
 
-        // console.log(new Date().getDay());
-        // let dat = days[i].dt;
-        day.textContent = getDayOfWeek(new Date());
+        day.textContent = getDayOfWeek(new Date(days[i].dt_txt));
         img.setAttribute('src', imagesrc);
         img.setAttribute('alt', days[i].weather.description);
         img.setAttribute('title', days[i].weather.main);
-        temp.textContent = parseInt(days[i].main.temp) + ' F';
+        temp.textContent = parseInt(days[i].main.temp) + ' ℉';
 
         dow.appendChild(day);
         curimg.appendChild(img);
