@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 
 //Fetch for Weather Summary
 
@@ -23,12 +23,12 @@ fetch(apiURL)
     let wspeed = parseFloat(jsObject.wind.speed).toFixed(0);
 
     if (temp <= 50 && wspeed > 3.0) {
-      var wchill = windChill(temp, wspeed);
+      var wchill = parseFloat(windChill(temp, wspeed)).toFixed(0);
     } else {
       wchill = "N/A";
     }
 
-    document.getElementById('windchill').textContent = parseFloat(wchill).toFixed(0);
+    document.getElementById('windchill').textContent =wchill;
 
     //windhcill function that calulcates winchill from temp and speed.
     function windChill(tempF, speed) {
@@ -39,7 +39,7 @@ fetch(apiURL)
 
 
 //Weather Forecast URL
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 
 fetch(forecastURL)
   .then((response) => response.json())
