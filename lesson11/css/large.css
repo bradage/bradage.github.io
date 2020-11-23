@@ -1,0 +1,205 @@
+@media only screen and (min-width: 66em) {
+    .nav {
+        display: flex;
+    }
+
+    .nav li {
+        display: block;
+        flex: 1 1 auto;
+        font-size: larger;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+
+    .nav li:first-child {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        align-items: center;
+        margin: 0% 15% 0% 15%;
+    }
+
+    .mainDiv {
+        position: relative;
+    }
+
+    .galleryDiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    img {
+        width: 600px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    td {
+        font-size: 16px;
+    }
+
+    .placeHolder {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+        margin: 0% 15% 0% 15%;
+    }
+
+    /* Town Cards */
+    div.towns {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    main div section div section img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main div section div section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    div.info {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Weather Summary */
+    tr {
+        line-height: 25px;
+    }
+
+    td {
+        vertical-align: middle;
+    }
+
+    /*Image Rules*/
+
+    header picture img.logo {
+        width: 175px;
+        height: auto;
+    }
+
+    .mainImg {
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .articleImg {
+        width: 300px;
+        height: auto;
+        float: right;
+        padding: 15px;
+    }
+
+    .socialImg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .currentSummary {
+        margin: 3em 0em 0em 3em;
+        padding: .65em;
+    }   
+
+    /* Forecast */
+    section.forecast {
+        display: block;
+    }
+
+    div.forecast {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: repeat(5, 150px);
+        justify-content: center;
+        /* margin: auto; */
+    }
+
+    section.forecastCard {
+        display: inherit;
+        padding: 3px 3px;
+        border: 2px solid black;
+        background: #5D8BA3;
+    }
+
+    div.dayOfWeek {
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        background-color: #234E66;
+        color: #FFCE8B;
+        font-weight: bold;
+        line-height: 25px;
+        padding: 1px 0;
+    }
+
+    div.currentImage {
+        display: grid;
+    }
+
+    .currentImage img {
+        width: 80px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .currentTemp p {
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        color: white;
+    }
+
+
+    .mainArticle {
+        display: block;
+        background-color: #5D8BA3;
+    }
+
+    /* Contact info */
+    div.contact {
+        display: block;
+        background-color: #5D8BA3;
+    }
+
+    contactImg {
+        width: 300px;
+        height: auto;
+        margin: 1em 0em 0em 1em;
+    }
+
+    .contactInfo {
+        padding-right: 30em;
+    }
+
+    #icon {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+    }
+
+}
