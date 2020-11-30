@@ -68,13 +68,14 @@ h1 {
 h2 {
   font-size: 18px;
   text-align: left;
+  margin-left: 15px;
 }
 
 .headerh3 {
   font-size: 14px;
   font-style: italic;
   color: #FFCE8B;
-  margin: 0px 0px 0px 10px;
+  margin: 15px 0px 15px 10px;
 }
 
 /* Pancake message */
@@ -93,6 +94,8 @@ div.towns {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
+  max-width: 96%;
+  margin: auto
 }
 
 div.towns {
@@ -263,7 +266,7 @@ figcaption {
   background-color: #FFCE8B;
   text-align: center;
   line-height: 2em;
-  width: 200px;
+  width: auto;
 }
 
 figure img:hover {
@@ -294,6 +297,15 @@ img.wireframeLarge {
 }
 
 /*----------- FORM -----------*/
+/* main .stormCenter{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+} */
+main form {
+ vertical-align: center;
+}
+
 textarea {
   box-shadow: 2px 2px 2px grey;
 }

@@ -55,7 +55,6 @@
     }
 
     .galleryDiv {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
@@ -88,13 +87,16 @@
     div.mainTownsDiv {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 96%;
+        margin: 0 0 0 20px;
     }
 
     main div section div section img {
         width: 50%;
         height: 50%;
-        margin: auto;
-        padding: 5px;
+        margin: 0 auto;
     }
 
     main section div section {
@@ -112,10 +114,13 @@
     div.info,
     div.info h2 {
         text-align: center;
+        margin: auto;
     }
 
     div.info h4 {
         font-style: italic;
+        padding: 5px;
+        margin: auto;
     }
 
     /*Image Rules*/
@@ -141,7 +146,10 @@
     .contactInfo {
         display: block;
         margin-left: 400px;
-        ;
+    }
+
+    main form {
+        margin-left: 100px;
     }
 
 }

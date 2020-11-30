@@ -28,13 +28,12 @@
     }
 
     .galleryDiv {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        grid-gap: 2px;
     }
 
     img {
-        width: 600px;
+        width: 363px;
         height: auto;
     }
 
@@ -138,7 +137,7 @@
         max-width: 900px;
         grid-template-columns: repeat(5, 150px);
         justify-content: center;
-        /* margin: auto; */
+        margin: auto;
     }
 
     section.forecastCard {
@@ -202,4 +201,7 @@
         background-color: white;
     }
 
+    main form {
+        margin-left: 150px;
+    }
 }
