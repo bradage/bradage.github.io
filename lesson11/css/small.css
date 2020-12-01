@@ -32,7 +32,6 @@ footer a {
 }
 
 .mainArticle {
-  margin: 10px 15px 10px 15px;
   text-align: justify;
   padding: 0 20px;
   background-color: #5D8BA3;
@@ -358,13 +357,14 @@ form label.inlb {
   padding: 8px 12px;
 }
 
-/*
-form label.top input:required {
-  border-left: red solid 6px;
+
+/* Upcoming Events */
+div.upcomingEvents {
+  display: grid;
+  border: solid #5D8BA3 3px;
 }
 
-form label.top input:required:valid {
-  border-left: green solid 6px;
-
+div.events {
+  text-align: center;
+  white-space: pre
 }
-*/
