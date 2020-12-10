@@ -1,0 +1,13 @@
+@media only screen and (min-width: 32em) {
+
+  /* Colors */
+  :root {
+    --orange: #E4572E;
+    --aqua: #17BEBB;
+    --yellow: #FFC914;
+    --dark: #2E282A;
+    --green: #76B041;
+    --white: #ffffff;
+  }
+
+}

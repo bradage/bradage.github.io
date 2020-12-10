@@ -1,0 +1,33 @@
+/* Colors */
+:root {
+  --orange: #E4572E;
+  --aqua: #17BEBB;
+  --yellow: #FFC914;
+  --dark: #2E282A;
+  --green: #76B041;
+  --white: #ffffff;
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Galindo';
+}
+
+p,
+li {
+  font-family: 'Hind Guntur', sans-serif;
+}
+
+footer {
+  font-family: 'Tillana', sans-serif;
+}
+
+/* Header */
+
+img.logo {
+  width: 150px;
+  height: 100px;
+}
