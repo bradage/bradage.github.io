@@ -22,19 +22,45 @@
     <header>
         <img class="logo" src="images/scootslogofull.png" alt="Scoots Logo">
         <h1>Scoots</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class="navactive" href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Rentals</li>
-            <li>Reservations</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
+    <aside class="sidebar">
+        <form action="reservations.html">
+            <input class="reservationButton" type="submit" value="Reserve Now!" />
+        </form>
+        <h4>
+            Contact Us
+        </h4>
+        <h5>
+            el Centro
+        </h5>
+        <p>
+            Playa del Carmen-Cozumel Ferry Dock
+            el Centro de Cozumel
+        </p>
+        <h5>
+            Terminal Puerta Maya
+        </h5>
+        <p>
+            lakjsdlkf<br>
+
+        </p>
+    </aside>
     <main>
-        <section class="heroImage">
-            Hero Image
-        </section>
+        <picture class="mainImage">
+            <source srcset="images/home/mainx600.jpg" media="(min-width: 412px) and (max-width: 799px)">
+            <source srcset="images/home/mainfullx900.jpg" media="(min-width: 800px)">
+            <img src="images/home/mainx400.jpg" alt="Couple riding scooter on island">
+        </picture>
         <section class="rentalSummary">
             Rental Summary
         </section>
@@ -42,7 +68,7 @@
 
         </section>
     </main>
-    <footer>    
+    <footer>
         Footer
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

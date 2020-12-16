@@ -6,7 +6,6 @@
   --dark: #2E282A;
   --green: #76B041;
   --white: #ffffff;
-  --somethign: #bedbed;
 }
 
 /* Fonts */
@@ -26,19 +25,106 @@ footer {
   font-family: 'Tillana', sans-serif;
 }
 
-/* Header */
-
-img.logo {
-  width: 150px;
-  height: 100px;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-}
- 
 /* Body */
 body{
   padding: 0 5px;
+}
+
+/* Header */
+/* Logo */
+img.logo {
+  display: block;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: block;
+  margin:10px auto;
+  text-align: center;
+}
+
+
+/* Navigation */
+nav {
+  background-color: var(--aqua);
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+nav,
+ul,
+li,
+a {
+  display: block;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul {
+  padding-inline-start: 0px;
+}
+
+.nav li:first-child {
+  display: block;
+}
+
+.nav li {
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: .75rem;
+  text-decoration: none;
+}
+
+.nav a:hover, .navactive{
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+
+.responsive li {
+  display: block;
+}
+
+ /* Reservation Aside */
+ aside.sidebar {
+   position: sticky;
+   width: 150px;
+   display: block;
+   z-index:  auto;
+ }
+ input.reservationButton {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 7px;
+  
+}
+
+/* Main */
+main {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+picture.mainImage {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
 }
