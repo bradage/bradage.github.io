@@ -6,6 +6,7 @@
   --dark: #2E282A;
   --green: #76B041;
   --white: #ffffff;
+  --somethign: #bedbed;
 }
 
 /* Fonts */
@@ -30,4 +31,14 @@ footer {
 img.logo {
   width: 150px;
   height: 100px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+}
+ 
+/* Body */
+body{
+  padding: 0 5px;
 }
