@@ -56,6 +56,7 @@ footer {
 }
 
 #weatherAlert {
+  display: none;
   background-color: var(--orange);
   padding: 1px 0;
 }
