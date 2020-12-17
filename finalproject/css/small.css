@@ -9,6 +9,7 @@
 }
 
 /* Fonts */
+/* Font Family */
 h1,
 h2,
 h3,
@@ -17,7 +18,9 @@ h4 {
 }
 
 p,
-li {
+li,
+th,
+td {
   font-family: 'Hind Guntur', sans-serif;
 }
 
@@ -25,23 +28,55 @@ footer {
   font-family: 'Tillana', sans-serif;
 }
 
+/* Font Size */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p,
+li,
+footer {
+  font-size: 16px;
+}
+
+#weatherAlert {
+  background-color: var(--orange);
+  padding: 1px 0;
+}
+
 /* Body */
-body{
+body {
   padding: 0 5px;
 }
 
 /* Header */
 /* Logo */
+header{
+  background-color: var(--green);
+}
 img.logo {
   display: block;
   width: 150px;
   height: 100px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 h1 {
   display: block;
-  margin:10px auto;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -50,7 +85,7 @@ h1 {
 nav {
   background-color: var(--aqua);
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5em;
   font-weight: bold;
 }
@@ -79,6 +114,7 @@ a {
 
 .nav li {
   display: none;
+  font-size: 24px;
 }
 
 .nav a {
@@ -87,7 +123,8 @@ a {
   text-decoration: none;
 }
 
-.nav a:hover, .navactive{
+.nav a:hover,
+.navactive {
   background-color: var(--yellow);
   color: var(--dark);
 }
@@ -96,35 +133,92 @@ a {
   display: block;
 }
 
- /* Reservation Aside */
- aside.sidebar {
-   position: sticky;
-   width: 150px;
-   display: block;
-   z-index:  auto;
- }
- input.reservationButton {
-  background-color: var(--orange);
-  color: var(--white);
-  border-radius: 7px;
-  
-}
-
 /* Main */
 main {
   display: grid;
-  max-width: 900px;
+  max-width: 31em;
+  margin: 0 auto;
+  align-content: center;
+}
+
+picture{
   margin: 0 auto;
 }
 
-picture.mainImage {
-  width: 200px;
+img.mainImage {
+  width: 100%;
   height: auto;
+}
+
+/* Rental Summary */
+/* Table */
+table {
+  border-spacing: 0;
+}
+
+table th {
+  background-color: var(--yellow);
+}
+
+table td {
+  text-align: center;
+}
+
+table td.desc {
+  text-align: left;
+}
+
+tr:nth-child(){
+  text-align: left;
+}
+
+table.rentalSummary td, th {
+  border: solid 1px grey;
+  padding: 2px 2px;
+}
+
+/* Reservation Aside */
+aside.sidebar {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+aside.sidebar form {
+  margin-left: 75px;
+}
+
+input.reservationButton {
+  display: block;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+aside.sidebar h3 {
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+aside.sidebar h4 {
+  margin: 0 auto;
+}
+
+aside.sidebar p {
+  margin: 0 auto;
+  padding: 5px 0px;
 }
 
 /* Footer */
 footer {
-  display: grid;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 31em;
+  background-color: var(--green);
+  line-height: 3em;
+}
+
+footer section {
+  text-align: center;
 }

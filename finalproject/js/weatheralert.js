@@ -1,5 +1,5 @@
 //Weather Alert
-document.getElementById('bannerPancakes').style.display = "block";  
+document.getElementById('weatherAlert').style.display = "block";  
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=metric&appid=a9b6f510fa81d13af4c6e7785e1db32a"
 

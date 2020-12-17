@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -33,47 +35,71 @@
             </ul>
         </nav>
     </header>
-    <aside class="sidebar">
-        <form action="reservations.html">
-            <input class="reservationButton" type="submit" value="Reserve Now!" />
-        </form>
-        <h4>
-            Contact Us
-        </h4>
-        <h5>
-            el Centro
-        </h5>
-        <p>
-            Playa del Carmen-Cozumel Ferry Dock
-            el Centro de Cozumel
-        </p>
-        <h5>
-            Terminal Puerta Maya
-        </h5>
-        <p>
-            lakjsdlkf<br>
-
-        </p>
-    </aside>
     <main>
-        <picture class="mainImage">
+        <picture>
             <source srcset="images/home/mainx600.jpg" media="(min-width: 412px) and (max-width: 799px)">
             <source srcset="images/home/mainfullx900.jpg" media="(min-width: 800px)">
-            <img src="images/home/mainx400.jpg" alt="Couple riding scooter on island">
+            <img class="mainImage" src="images/home/mainx400.jpg" alt="Couple riding scooter on island">
         </picture>
-        <section class="rentalSummary">
-            Rental Summary
+        <section>
+            <table class="rentalSummary">
+                <thead>
+                    <th colspan="6">Rental Summary with Pricing (includes taxes)</th>
+                </thead>
+                <tr>
+                    <th rowspan="2">Rental Type</th>
+                    <th rowspan="2">Max. Persons</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </table>
         </section>
+        <aside class="sidebar">
+            <form action="reservations.html">
+                <input class="reservationButton" type="submit" value="Reserve Now!" />
+            </form>
+            <h3>
+                Contact Us
+            </h3>
+            <h4>
+                el Centro
+            </h4>
+            <p>
+                Av. Rafael E. Melgar<br>
+                Centro, 77600 San Miguel <br>
+                de Cozumel, Q.R., Mexico
+            </p>
+            <h4>
+                Terminal Puerta Maya
+            </h4>
+            <p>
+                Quintana Roo C-1 km 4.5<br>
+                Costera, 77600 San Miguel <br>
+                de Cozumel, Q.R., Mexico
+
+            </p>
+        </aside>
         <section class="forecast">
 
         </section>
     </main>
     <footer>
-        Footer
+        <section>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script type="text/javascript" src="js/weatheralert.js"></script>
+    <!--<script type="text/javascript" src="js/weatheralert.js"></script>-->
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/rentals.js"></script>
 </body>
 
 </html>
