@@ -311,7 +311,7 @@ table.currentWeather {
 }
 
 .tdCenter {
-  color: var(--yellow);
+  color: var(--dark);
   vertical-align: middle;
 }
 
