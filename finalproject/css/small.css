@@ -109,10 +109,6 @@ a {
   padding: 0;
 }
 
-.nav ul {
-  padding-inline-start: 0px;
-}
-
 .nav li:first-child {
   display: block;
 }
@@ -170,10 +166,6 @@ table td {
 }
 
 table td.desc {
-  text-align: left;
-}
-
-tr:nth-child() {
   text-align: left;
 }
 
