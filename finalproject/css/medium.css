@@ -42,4 +42,49 @@
     width: 400px;
   }
 
+  /* Forecast */
+  section.forecast {
+    display: block;
+  }
+
+  div.forecast {
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: repeat(3, 125px);
+    justify-content: center;
+    margin: auto;
+  }
+
+  section.forecastCard {
+    display: inherit;
+    padding: 3px 3px;
+    border: 2px solid var(--dark);
+    background:var(--aqua);
+  }
+
+  div.dayOfWeek {
+    text-align: center;
+    background-color: var(--yellow);
+    color: var(--dark);
+    font-weight: bold;
+    line-height: 25px;
+    padding: 1px 0;
+  }
+
+  div.currentImage {
+    display: grid;
+  }
+
+  .currentImage img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .currentTemp p {
+    text-align: center;
+    font-size: 18px;
+    color: var(--dark);
+  }
+
 }

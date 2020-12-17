@@ -16,4 +16,9 @@
     width: 600px;
   }
 
+  /* Footer */
+  footer {
+    max-width: 100%;
+  }
+
 }

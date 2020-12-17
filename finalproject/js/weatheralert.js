@@ -42,7 +42,7 @@ fetch(forecastURL)
         img.setAttribute('src', imagesrc);
         img.setAttribute('alt', days[i].weather.description);
         img.setAttribute('title', days[i].weather.main);
-        temp.textContent = parseInt(days[i].main.temp) + ' ℉';
+        temp.textContent = parseInt(days[i].main.temp) + ' °C';
 
         dow.appendChild(day);
         curimg.appendChild(img);

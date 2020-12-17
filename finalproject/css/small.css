@@ -67,9 +67,10 @@ body {
 
 /* Header */
 /* Logo */
-header{
+header {
   background-color: var(--green);
 }
+
 img.logo {
   display: block;
   width: 150px;
@@ -145,7 +146,7 @@ main {
   align-content: center;
 }
 
-picture{
+picture {
   margin: 0 auto;
 }
 
@@ -172,11 +173,12 @@ table td.desc {
   text-align: left;
 }
 
-tr:nth-child(){
+tr:nth-child() {
   text-align: left;
 }
 
-table.rentalSummary td, th {
+table.rentalSummary td,
+th {
   border: solid 1px grey;
   padding: 2px 2px;
 }
@@ -284,7 +286,7 @@ form input.button {
   border-radius: 7px;
   box-shadow: 2px 2px 2px grey;
   width: 96%;
-  max-width: 15rem; 
+  max-width: 15rem;
 }
 
 /* Tours */
@@ -293,4 +295,34 @@ form input.button {
   height: auto;
   float: right;
   padding: 15px;
+}
+
+
+/* Curent Weather */
+table.currentWeather {
+  background-color: var(--aqua);
+  padding: 5px;
+  font-size: 18px;
+}
+
+.tdLeft {
+  text-align: right;
+  vertical-align: middle;
+  color: var(--dark);
+}
+
+.tdRight {
+  text-align: left;
+  vertical-align: middle;
+  color: var(--dark);
+}
+
+.tdCenter {
+  color: var(--yellow);
+  vertical-align: middle;
+}
+
+/* Forecast */
+section.forecast {
+  display: none;
 }

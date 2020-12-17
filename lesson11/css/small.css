@@ -368,3 +368,8 @@ div.events {
   text-align: center;
   white-space: pre
 }
+
+/* Forecast */
+section.forecast {
+  display: none;
+}
