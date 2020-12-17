@@ -221,6 +221,9 @@ aside.sidebar p {
   padding: 5px 0px;
 }
 
+iframe {
+  width: 300px;
+}
 
 /* Footer */
 footer {
@@ -253,6 +256,17 @@ form fieldset {
 
 .iDoWhatIWant {
   width: auto;
+}
+
+form textarea {
+  display: block;
+  color: var(--dark);
+  font-size: 16px;
+  border: solid 1px grey;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 300px;
 }
 
 form label.top,

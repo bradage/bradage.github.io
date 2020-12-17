@@ -5,16 +5,113 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Bradey Merrill">
-    <meta name="description" content="Home page for Weather Update">
+    <meta name="description" content="Scoots Contact Page">
 
-    <title>Home - Weather Update</title>
+    <title>Contact - Scoots</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
-   
+    <aside id="weatherAlert">
+        <p>HURICANE A COMIN!</p>
+    </aside>
+    <header>
+        <img class="logo" src="images/scootslogofull.png" alt="Scoots Logo">
+        <h1>Scoots</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a class="navactive" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table class="rentalSummary">
+                <thead>
+                    <th colspan="6">Rental Summary with Pricing (includes taxes)</th>
+                </thead>
+                <tr>
+                    <th rowspan="2">Rental Type</th>
+                    <th rowspan="2">Max. Persons</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </table>
+        </section>
+        <aside class="sidebar">
+            <form action="reservations.html">
+                <input class="reservationButton" type="submit" value="Reserve Now!" />
+            </form>
+            <h3>
+                Contact Us Today!
+            </h3>
+            <h4>
+                el Centro
+            </h4>
+            <p>
+                Av. Rafael E. Melgar<br>
+                Centro, 77600 San Miguel <br>
+                de Cozumel, Q.R., Mexico,<br>
+                &#9990;+52 987 117 7418<br>
+                &#9993; hellothere@scoots.com
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15882.423951124656!2d-86.95838986916989!3d20.509387709536888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1608183145573!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h4>
+                Terminal Puerta Maya
+            </h4>
+            <p>
+                Quintana Roo C-1 km 4.5<br>
+                Costera, 77600 San Miguel <br>
+                de Cozumel, Q.R., Mexico<br>
+                &#9990;+52 987 869 1984<br>
+                &#9993; hellothere@scoots.com
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15886.948360407774!2d-86.9829222803179!3d20.46570959345287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33e0a37b1a48073f!2sCruise%20Ship%20Terminal%2C%20Cozumel%2C%20Mexico!5e0!3m2!1sen!2sus!4v1608183540312!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </aside>
+        <form class="reservation" method="GET" action="confirmcontact.html">
+            <fieldset>
+                <legend>Drop us a Line</legend>
+                <label for="fullName" class="top">Full Name*
+                    <input type="text" name="fullName" id="fullName" pattern="[A-Za-z\s]+" minlength="5" required>
+                </label>
+                <label for="email" class="top">Email*
+                    <input type="email" name="email" id="email" placeholder="youremail@domain.com" required>
+                </label>
+                <label for="addInfo" class="top">Additional Information<br>
+                    <textarea id="addInfo" name="addInfo"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Complete Reservation" class="button">
+        </form>
+    </main>
+    <footer>
+        <section>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!--<script type="text/javascript" src="js/weatheralert.js"></script>-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/rentals.js"></script>
 </body>
+
 </html>
