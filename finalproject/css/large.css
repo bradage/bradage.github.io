@@ -10,5 +10,10 @@
     --white: #ffffff;
   }
 
-  
+
+  /* Form */
+  form fieldset {
+    width: 600px;
+  }
+
 }

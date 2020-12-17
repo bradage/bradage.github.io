@@ -10,6 +10,36 @@
     --white: #ffffff;
   }
 
- 
+  /* Navigation */
+  .nav {
+    display: flex;
+  }
+
+  .nav li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  .nav li:first-child {
+    display: none;
+  }
+
+  ul.infoService li {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    max-width: 65em;
+  }
+
+  /* Form */
+  form fieldset {
+    width: 400px;
+  }
 
 }

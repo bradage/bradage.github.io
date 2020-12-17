@@ -20,7 +20,11 @@ h4 {
 p,
 li,
 th,
-td {
+td,
+label,
+input,
+legend,
+div {
   font-family: 'Hind Guntur', sans-serif;
 }
 
@@ -177,6 +181,11 @@ table.rentalSummary td, th {
   padding: 2px 2px;
 }
 
+img.scootIcon {
+  width: 15px;
+  height: auto;
+}
+
 /* Reservation Aside */
 aside.sidebar {
   display: block;
@@ -212,8 +221,10 @@ aside.sidebar p {
   padding: 5px 0px;
 }
 
+
 /* Footer */
 footer {
+  display: grid;
   max-width: 31em;
   background-color: var(--green);
   line-height: 3em;
@@ -221,4 +232,51 @@ footer {
 
 footer section {
   text-align: center;
+}
+
+/* Reservation */
+form.reservation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form fieldset {
+  width: 250px;
+}
+
+.inlb {
+  display: block;
+  padding: 8px 12px;
+}
+
+.iDoWhatIWant {
+  width: auto;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 15px;
+  color: var(--dark);
+  font-size: 16px;
+}
+
+form input.button {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 10px 10px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px grey;
+  width: 96%;
+  max-width: 15rem; 
+}
+
+/* Tours */
+.articleImg {
+  width: 200px;
+  height: auto;
+  float: right;
+  padding: 15px;
 }

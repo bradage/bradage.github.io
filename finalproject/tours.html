@@ -5,16 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Bradey Merrill">
-    <meta name="description" content="Home page for Weather Update">
+    <meta name="description" content="Scoots Home Page">
 
-    <title>Home - Weather Update</title>
+    <title>Home - Scoots</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
-   
+    <aside id="weatherAlert">
+        <p>HURICANE A COMIN!</p>
+    </aside>
+    <header>
+        <img class="logo" src="images/scootslogofull.png" alt="Scoots Logo">
+        <h1>Scoots</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a class="navactive" href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/tours/cruisex600.jpg" media="(min-width: 412px) and (max-width: 799px)">
+            <source srcset="images/tours/cruisex800.jpg" media="(min-width: 800px)">
+            <img class="mainImage" src="images/tours/cruisex400.jpg" alt="Cruise ship at night">
+        </picture>
+        <article>
+            <p>The island is located in the Caribbean Sea along the eastern side of the Yucatan Peninsula about 82 km (51 mi) south of Cancún and 19 km (12 mi) from the mainland. The island is about 48 km (30 mi) long and 16 km (9.9 mi) wide. With a total area of 477.961 km2 (184.542 sq mi), it is Mexico's largest Caribbean island, largest permanently inhabited island, and Mexico's third-largest island, following Tiburón Island and Isla Ángel de la Guarda.</p>
+
+            <p>The majority of the island's population lives in the town of San Miguel (pop. 77,236 in 2010), which is on the island's western shore. The municipality, which includes two small areas on the mainland enclaved within the Municipality of Solidaridad with a land area of 10.423 km2 (4.024 sq mi), has a total land area of 647.33 km2 (249.94 sq mi).</p>
+            
+            <p>Large parts of the island are covered with mangrove forest which has many endemic animal species. Cozumel is a flat island based on limestone, resulting in a karst topography. The highest natural point on the island is less than 15 m (49 ft) above sea level. The cenotes are deep water-filled sinkholes formed by water percolating through the soft limestone soil for thousands of years. Cozumel's cenotes are restricted to qualified cave divers with appropriate credentials.</p>
+
+            <p>-"Cozumel", Wikipedia</p>
+        </article>
+        <article class="snorkel">
+            <img src="images/tours/snorkelx400.jpg" class="articleImg" alt="couple snorkeling">
+            <p>Among the most popular tourist attractions in Cozumel is the fantastic snorkeling in the coral reefs.  With warm, clear water and dazzling tropical sites to see no wonder so many people embark on this adventure while visiting Cozumel!</p>
+        </article>
+    </main>
+    <footer>
+        <section>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!--<script type="text/javascript" src="js/weatheralert.js"></script>-->
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+
 </html>

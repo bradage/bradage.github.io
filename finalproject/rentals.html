@@ -5,16 +5,93 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Bradey Merrill">
-    <meta name="description" content="Home page for Weather Update">
+    <meta name="description" content="Scoots Rental Page">
 
-    <title>Home - Weather Update</title>
+    <title>Rentals - Scoots</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
-   
+    <aside id="weatherAlert">
+        <p>HURICANE A COMIN!</p>
+    </aside>
+    <header>
+        <img class="logo" src="images/scootslogofull.png" alt="Scoots Logo">
+        <h1>Scoots</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="navactive" href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/home/mainx600.jpg" media="(min-width: 412px) and (max-width: 799px)">
+            <source srcset="images/home/mainfullx900.jpg" media="(min-width: 800px)">
+            <img class="mainImage" src="images/home/mainx400.jpg" alt="Couple riding scooter on island">
+        </picture>
+        <section>
+            <h3>
+                The Down and Dirty
+            </h3>
+            <ul class="infoService">
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> A $50 security deposit is required to confirm reservations.</li>                          
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> A valid drivers license is required in hand at time of rental.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Fuel charge not included.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Unlimited mileage.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Liability insurance is free of charge.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Reservations rate requires 24 hour prior notification.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li><img src="images/rentals/scooticon.png" class="scootIcon"> Rentals may be returned to either location.</li>
+            </ul>
+        </section>
+        <section>
+            <table class="rentalSummary">
+                <thead>
+                    <th colspan="6">Rental Summary with Pricing (includes taxes)</th>
+                </thead>
+                <tr>
+                    <th rowspan="2">Rental Type</th>
+                    <th rowspan="2">Max. Persons</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </table>
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <footer>
+        <section>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!--<script type="text/javascript" src="js/weatheralert.js"></script>-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/rentals.js"></script>
 </body>
+
 </html>

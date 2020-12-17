@@ -5,16 +5,98 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Bradey Merrill">
-    <meta name="description" content="Home page for Weather Update">
+    <meta name="description" content="Scoots Reservation Page">
 
-    <title>Home - Weather Update</title>
+    <title>Reservations - Scoots</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
-   
+    <aside id="weatherAlert">
+        <p>HURICANE A COMIN!</p>
+    </aside>
+    <header>
+        <img class="logo" src="images/scootslogofull.png" alt="Scoots Logo">
+        <h1>Scoots</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a class="navactive" href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="reservation" method="GET" action="confirmation.html">
+            <fieldset>
+                <legend>Reservation Details</legend>
+                <label for="date" class="top">Date*
+                    <input type="date" name= "date" id="date" required>
+                </label>
+                <div>Reservation Period</div>
+                <label for="half" class="inlb">
+                    <input class="iDoWhatIWant" type="radio" id="half" name="period" value="half" required>
+                    Half Day (3 hrs)
+                </label>
+                <label for="full" class="inlb">
+                    <input class="iDoWhatIWant" type="radio" id="full" name="period" value="full" required>
+                    Full Day
+                </label>
+                <label for="rentalType" class="top">Rental Type*
+                    <select id="rentalType" name="rentalType" onchange="selection()" required>
+                        <option value="" selected disabled>Select Rental Type...</option>
+                        <option value="HondaMetroScooter">Honda Metro Scooter</option>
+                        <option value="HondaDioScooter">Honda Dio Scooter</option>
+                        <option value="HondaPCX150Scooter">Honda PCX150 Scooter</option>
+                        <option value="HondaPioneerATV">Honda Pioneer ATV</option>
+                        <option value="JeepWrangler4doorwithac	">Jeep Wrangler - 4 door with a/c	</option>
+                        <option value="JeepWrangler2door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label><br>
+                <label for="numRentals" class="top">Number of Rentals*
+                    <input type="number" id="numRentals" name="numRentals" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName" class="top">Full Name*
+                    <input type="text" name="fullName" id="fullName" pattern="[A-Za-z\s]+" minlength="5" required>
+                </label>
+                <label for="email" class="top">Email*
+                    <input type="email" name="email" id="email" placeholder="youremail@domain.com" required>
+                </label>
+                <label for="phone" class="top">Telephone*
+                    <input type="tel" name="phone" id="phone" required>
+                </label>
+                <label for="state" class="top">State or Country
+                    <input type="text" name="state" id="state">
+                </label>
+                <label for="liner" class="top">Cruise Line
+                    <input type="text" name="liner" id="liner">
+                </label>
+            </fieldset>
+            <input type="submit" value="Complete Reservation" class="button">
+        </form>
+        
+    </main>
+    <footer>
+        <section>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+
 </html>
